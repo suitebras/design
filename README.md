@@ -46,6 +46,13 @@ Para um projeto shadcn/ui + Tailwind v4, a seção **Código-fonte** da página 
 `globals.css` pronto para substituir o `:root` gerado pelo `shadcn init`, além de
 um brief para colar em agentes de código.
 
+## Publicação
+
+O site é publicado no GitHub Pages por `.github/workflows/pages.yml` a cada push
+na `main`. Antes da primeira execução é preciso ligar o Pages uma única vez em
+**Settings → Pages → Build and deployment → Source: GitHub Actions** — o token do
+Actions não tem permissão para criar o site sozinho.
+
 ## Rodando localmente
 
 ```bash

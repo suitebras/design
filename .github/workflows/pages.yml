@@ -23,10 +23,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      # Exige o Pages já ligado em Settings → Pages → Source: GitHub Actions.
+      # `enablement: true` não funciona aqui: o GITHUB_TOKEN não tem permissão
+      # para criar o site ("Resource not accessible by integration").
       - uses: actions/configure-pages@v5
-        with:
-          # liga o Pages na primeira execução, sem precisar mexer nas Settings
-          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
