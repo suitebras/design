@@ -1,0 +1,50 @@
+/* Suitebras — Base element defaults (Sera) */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: var(--foreground);
+  margin: 0;
+  text-wrap: balance;
+}
+/* Sera: small headings (h5/h6) are uppercase + tracked */
+h5, h6 { font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-caps); font-weight: var(--font-semibold); }
+
+p { margin: 0; text-wrap: pretty; }
+
+a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .15s ease; }
+a:hover { color: var(--brand-dark); }
+
+code, kbd, pre, samp { font-family: var(--font-mono); font-size: .92em; }
+
+/* Eyebrow — the Sera uppercase tracked kicker */
+.sb-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+::selection { background: var(--sb-blue-light); color: var(--sb-blue-dark); }
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0; }

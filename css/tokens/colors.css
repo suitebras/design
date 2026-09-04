@@ -1,0 +1,116 @@
+/* Suitebras — Colors
+   Brand values: Brand Manual – Design Kit (exact hex).
+   Neutrals: shadcn "zinc" base color from preset b3ax5kgCLA.
+   Light mode only (per brief). */
+
+:root {
+  /* ============================================================
+     BRAND — PRIMARY  (Manual · "Primary Colors")
+     ~80% white/light-gray · ~10% Blue Logo · ~10% Blue Dark.
+     Blue Dark is for emphasis and CTAs only — use sparingly.
+     ============================================================ */
+  --sb-blue:        #0069C1;  /* "Blue Logo" */
+  --sb-blue-dark:   #003869;  /* "Blue Dark" */
+
+  /* ============================================================
+     BRAND — SECONDARY  (Manual · "Secondary Colors")
+     ============================================================ */
+  --sb-blue-light:        #E3EDFA;
+  --sb-blue-water-light:  #8EB6DE;
+  --sb-blue-water:        #4584BD;
+  --sb-blue-navy-light:   #336087;
+
+  /* ============================================================
+     BRAND — NEUTRALS  (Manual · "Neutral Colors")
+     ============================================================ */
+  --sb-white:      #FFFFFF;
+  --sb-off-white:  #FAFBF9;
+  --sb-gray:       #F5F5F5;
+  --sb-black:      #000000;
+
+  /* ============================================================
+     ZINC RAMP  (preset baseColor: zinc — Tailwind v4 values)
+     Used for every UI neutral: text, borders, muted surfaces.
+     ============================================================ */
+  --zinc-50:  #FAFAFA;
+  --zinc-100: #F4F4F5;
+  --zinc-200: #E4E4E7;
+  --zinc-300: #D4D4D8;
+  --zinc-400: #A1A1AA;
+  --zinc-500: #71717A;
+  --zinc-600: #52525B;
+  --zinc-700: #3F3F46;
+  --zinc-800: #27272A;
+  --zinc-900: #18181B;
+  --zinc-950: #09090B;
+
+  /* legacy aliases kept for existing markup */
+  --sb-gray-50:  var(--zinc-50);
+  --sb-gray-100: var(--zinc-100);
+  --sb-gray-200: var(--zinc-200);
+  --sb-gray-300: var(--zinc-300);
+  --sb-gray-400: var(--zinc-400);
+  --sb-gray-500: var(--zinc-500);
+  --sb-gray-600: var(--zinc-600);
+  --sb-gray-700: var(--zinc-700);
+  --sb-gray-800: var(--zinc-800);
+  --sb-gray-900: var(--zinc-900);
+
+  /* ============================================================
+     GRADIENTS  (Manual · "Gradient Color Guide")
+     ============================================================ */
+  --sb-gradient-dark:  linear-gradient(135deg, #0069C1 0%, #003869 100%);
+  --sb-gradient-light: linear-gradient(135deg, #80B4E0 0%, #4D7496 100%);
+
+  /* ============================================================
+     SEMANTIC STATES  (ADDED — not in the manual)
+     ============================================================ */
+  --sb-success: #2E9E5B;
+  --sb-warning: #E8A33D;
+  --sb-danger:  #D64545;
+  --sb-info:    var(--sb-blue);
+
+  /* ============================================================
+     SHADCN SEMANTIC TOKENS — light (zinc base + brand overlay)
+     Identical names to shadcn/ui globals.css. Copy the block.
+     ============================================================ */
+  --background:             #FFFFFF;
+  --foreground:             var(--zinc-950);
+  --card:                   #FFFFFF;
+  --card-foreground:        var(--zinc-950);
+  --popover:                #FFFFFF;
+  --popover-foreground:     var(--zinc-950);
+  --primary:                var(--sb-blue);
+  --primary-foreground:     #FFFFFF;
+  --secondary:              var(--zinc-100);
+  --secondary-foreground:   var(--zinc-900);
+  --muted:                  var(--zinc-100);
+  --muted-foreground:       var(--zinc-500);
+  --accent:                 var(--sb-blue-light);
+  --accent-foreground:      var(--sb-blue-dark);
+  --destructive:            var(--sb-danger);
+  --destructive-foreground: #FFFFFF;
+  --border:                 var(--zinc-200);
+  --input:                  var(--zinc-300);
+  --ring:                   var(--sb-blue);
+
+  --sidebar:                    var(--zinc-50);
+  --sidebar-foreground:         var(--zinc-950);
+  --sidebar-primary:            var(--sb-blue);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent:             var(--sb-blue-light);
+  --sidebar-accent-foreground:  var(--sb-blue-dark);
+  --sidebar-border:             var(--zinc-200);
+  --sidebar-ring:               var(--sb-blue);
+
+  /* Brand aliases for CTAs */
+  --brand:      var(--sb-blue);
+  --brand-dark: var(--sb-blue-dark);
+
+  /* Charts — brand blue family replaces the preset's indigo */
+  --chart-1: #003869;
+  --chart-2: #0069C1;
+  --chart-3: #4584BD;
+  --chart-4: #8EB6DE;
+  --chart-5: #E3EDFA;
+}

@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suitebras — Design System</title>
+<link rel="icon" href="assets/logo/monograma-positivo.svg">
+<link rel="stylesheet" href="css/suitebras.css">
+<link rel="stylesheet" href="css/icons/phosphor.css">
+<link rel="stylesheet" href="css/icons/phosphor-fill.css">
+<link rel="stylesheet" href="css/docs.css">
+</head>
+<body>
+<div class="shell">
+
+  <aside class="side">
+    <div class="side__brand"><img src="assets/logo/monograma-positivo.svg" alt="Suitebras"></div>
+    <div class="side__meta">Design System<br>v1.0 · 2026</div>
+    <nav id="nav">
+      <div class="grp">Fundamentos</div>
+      <a href="#visao">Visão geral</a>
+      <a href="#marca">Marca &amp; logo</a>
+      <a href="#cores">Cores</a>
+      <a href="#tipografia">Tipografia</a>
+      <a href="#geometria">Geometria</a>
+      <a href="#espacamento">Espaçamento</a>
+      <a href="#elevacao">Elevação</a>
+      <a href="#icones">Ícones</a>
+      <div class="grp">Componentes</div>
+      <a href="#botoes">Botões</a>
+      <a href="#formularios">Formulários</a>
+      <a href="#exibicao">Exibição</a>
+      <a href="#navegacao">Navegação</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#dados">Dados</a>
+      <a href="#overlays">Overlays</a>
+      <div class="grp">Aplicação</div>
+      <a href="#kits">UI kits</a>
+      <a href="#voz">Voz &amp; conteúdo</a>
+      <a href="#handoff">Handoff dev</a>
+      <a href="#codigo">Código-fonte</a>
+    </nav>
+    <div class="side__foot">preset <span class="tok">b3ax5kgCLA</span><br>sera · zinc · phosphor</div>
+  </aside>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <header class="hero" id="visao">
+      <img src="assets/logo/suitebras-positivo.svg" alt="Suitebras">
+      <h1>O sistema de design da Suitebras.</h1>
+      <p>Uma base única de cor, tipografia, geometria e componentes para todos os sites da empresa — do institucional ao painel do cliente.</p>
+      <div class="hero__meta">
+        <div><div class="k">Style</div><div class="v">Sera</div></div>
+        <div><div class="k">Base</div><div class="v">Zinc</div></div>
+        <div><div class="k">Tipos</div><div class="v">Geist · Public Sans</div></div>
+        <div><div class="k">Raio</div><div class="v">4 / 8px</div></div>
+        <div><div class="k">Ícones</div><div class="v">Phosphor</div></div>
+      </div>
+      <p class="note">Gerado a partir do <b>Brand Manual – Design Kit</b> (cores, logo, proporções) e do preset shadcn oficial da empresa <code class="inline">b3ax5kgCLA</code>, que define tipografia, neutros, raio e biblioteca de ícones. Modo claro, pt-BR.</p>
+    </header>
+
+    <!-- ============ MARCA ============ -->
+    <section id="marca">
+      <div class="h-sec"><h2>Marca &amp; logo</h2><span class="n">01</span></div>
+      <p class="lede">O símbolo une o <b>“S”</b> de <i>suite</i> ao <b>“B”</b> de <i>Brasil</i>. O azul representa tecnologia; os espaços vazados representam a transparência da empresa.</p>
+      <div class="logo-grid">
+        <div><div class="logo-cell"><img class="full" src="assets/logo/suitebras-positivo.svg" alt="positivo"></div><div class="logo-cap">positivo</div></div>
+        <div><div class="logo-cell navy"><img class="full" src="assets/logo/suitebras-negativo.svg" alt="negativo"></div><div class="logo-cap">negativo</div></div>
+        <div><div class="logo-cell zinc"><img class="mono" src="assets/logo/monograma-positivo.svg" alt="monograma"></div><div class="logo-cap">monograma</div></div>
+        <div><div class="logo-cell blue"><img class="mono" src="assets/logo/monograma-negativo.svg" alt="monograma negativo"></div><div class="logo-cap">monograma neg.</div></div>
+      </div>
+      <p class="note"><b>Uso:</b> o logo completo em headers, rodapés e materiais; o monograma como favicon, ícone de app e avatar. Área de respiro mínima = altura do símbolo. Nunca distorcer, rotacionar, aplicar sombra ou recolorir fora das variações acima.</p>
+    </section>
+
+    <!-- ============ CORES ============ -->
+    <section id="cores">
+      <div class="h-sec"><h2>Cores</h2><span class="n">02</span></div>
+      <p class="lede">Sistema monocromático azul sobre tela predominantemente branca. O manual é explícito na proporção: o azul aparece como acento, nunca como fundo dominante.</p>
+
+      <h3 class="sub">Primárias</h3>
+      <div class="cgrid">
+        <div class="chip"><div class="fill" style="background:#0069C1"></div><div class="meta"><div class="nm">Blue Logo</div><div class="hx">#0069C1 · --primary</div><div class="us">Cor primária. Botões, links, ênfase.</div></div></div>
+        <div class="chip"><div class="fill" style="background:#003869"></div><div class="meta"><div class="nm">Blue Dark</div><div class="hx">#003869 · --brand-dark</div><div class="us">CTA principal. Um por tela.</div></div></div>
+        <div class="chip"><div class="fill" style="background:#FFFFFF"></div><div class="meta"><div class="nm">White</div><div class="hx">#FFFFFF · --background</div><div class="us">Tela base. ~80% do design.</div></div></div>
+        <div class="chip"><div class="fill" style="background:#F5F5F5"></div><div class="meta"><div class="nm">Light Gray</div><div class="hx">#F5F5F5</div><div class="us">Fundo de seção alternado.</div></div></div>
+      </div>
+
+      <h3 class="sub">Secundárias</h3>
+      <div class="cgrid">
+        <div class="chip"><div class="fill" style="background:#E3EDFA;height:64px"></div><div class="meta"><div class="nm">Blue Light</div><div class="hx">#E3EDFA · --accent</div></div></div>
+        <div class="chip"><div class="fill" style="background:#8EB6DE;height:64px"></div><div class="meta"><div class="nm">Blue Water Light</div><div class="hx">#8EB6DE</div></div></div>
+        <div class="chip"><div class="fill" style="background:#4584BD;height:64px"></div><div class="meta"><div class="nm">Blue Water</div><div class="hx">#4584BD</div></div></div>
+        <div class="chip"><div class="fill" style="background:#336087;height:64px"></div><div class="meta"><div class="nm">Blue Navy Light</div><div class="hx">#336087</div></div></div>
+      </div>
+
+      <h3 class="sub">Neutros — zinc (do preset)</h3>
+      <div class="ramp">
+        <div><div class="c" style="background:#FAFAFA"></div><div class="l">50</div></div>
+        <div><div class="c" style="background:#F4F4F5"></div><div class="l">100</div></div>
+        <div><div class="c" style="background:#E4E4E7"></div><div class="l">200</div></div>
+        <div><div class="c" style="background:#D4D4D8"></div><div class="l">300</div></div>
+        <div><div class="c" style="background:#A1A1AA"></div><div class="l">400</div></div>
+        <div><div class="c" style="background:#71717A"></div><div class="l">500</div></div>
+        <div><div class="c" style="background:#52525B"></div><div class="l">600</div></div>
+        <div><div class="c" style="background:#3F3F46"></div><div class="l">700</div></div>
+        <div><div class="c" style="background:#27272A"></div><div class="l">800</div></div>
+        <div><div class="c" style="background:#18181B"></div><div class="l">900</div></div>
+        <div><div class="c" style="background:#09090B"></div><div class="l">950</div></div>
+      </div>
+      <p class="note">Todo neutro de interface — texto, borda, superfície suave — vem desta rampa. <code class="inline">--foreground</code> é zinc-950; <code class="inline">--border</code> é zinc-200; <code class="inline">--muted-foreground</code> é zinc-500.</p>
+
+      <h3 class="sub">Proporção de uso · 80 / 10 / 10</h3>
+      <div class="split">
+        <div style="flex:80;background:#F4F4F5;color:#71717A">80%</div>
+        <div style="flex:10;background:#0069C1;color:#fff">10%</div>
+        <div style="flex:10;background:#003869;color:#fff">10%</div>
+      </div>
+      <div class="legend">
+        <span><span class="d" style="background:#F4F4F5"></span>Branco / cinza</span>
+        <span><span class="d" style="background:#0069C1"></span>Blue Logo</span>
+        <span><span class="d" style="background:#003869"></span>Blue Dark</span>
+      </div>
+
+      <h3 class="sub">Gradientes oficiais</h3>
+      <div class="stack">
+        <div class="grad" style="background:linear-gradient(135deg,#0069C1 0%,#003869 100%)"><span>Dark Gradient</span><span>#0069C1 → #003869</span></div>
+        <div class="grad" style="background:linear-gradient(135deg,#80B4E0 0%,#4D7496 100%)"><span>Light Gradient</span><span>#80B4E0 → #4D7496</span></div>
+      </div>
+      <p class="note">Apenas estes dois. Usados em faixas de CTA e heros de marca, com texto branco. Nunca em fundos de página inteira nem atrás de texto longo.</p>
+
+      <h3 class="sub">Estados semânticos <span style="text-transform:none;letter-spacing:0;font-weight:400">— adicionados, não constam no manual</span></h3>
+      <div class="cgrid">
+        <div class="chip"><div class="fill" style="background:#2E9E5B;height:52px"></div><div class="meta"><div class="nm">Success</div><div class="hx">#2E9E5B</div></div></div>
+        <div class="chip"><div class="fill" style="background:#E8A33D;height:52px"></div><div class="meta"><div class="nm">Warning</div><div class="hx">#E8A33D</div></div></div>
+        <div class="chip"><div class="fill" style="background:#D64545;height:52px"></div><div class="meta"><div class="nm">Danger</div><div class="hx">#D64545</div></div></div>
+        <div class="chip"><div class="fill" style="background:#0069C1;height:52px"></div><div class="meta"><div class="nm">Info</div><div class="hx">= Blue Logo</div></div></div>
+      </div>
+    </section>
+
+    <!-- ============ TIPOGRAFIA ============ -->
+    <section id="tipografia">
+      <div class="h-sec"><h2>Tipografia</h2><span class="n">03</span></div>
+      <p class="lede">Duas famílias, definidas pelo preset. <b>Geist</b> nos títulos — geométrica, semibold, tracking negativo. <b>Public Sans</b> no corpo e na interface. <b>Geist Mono</b> para números e código.</p>
+
+      <h3 class="sub">Títulos · Geist 600</h3>
+      <div class="tline"><span class="tg">6xl · 60px</span><span class="sp" style="font-family:var(--font-heading);font-size:var(--text-6xl);font-weight:600;letter-spacing:-.035em">Endereço certo</span></div>
+      <div class="tline"><span class="tg">4xl · 36px</span><span class="sp" style="font-family:var(--font-heading);font-size:var(--text-4xl);font-weight:600;letter-spacing:-.025em">Planos e endereços comerciais</span></div>
+      <div class="tline"><span class="tg">2xl · 24px</span><span class="sp" style="font-family:var(--font-heading);font-size:var(--text-2xl);font-weight:600;letter-spacing:-.02em">Como funciona a Suitebras</span></div>
+      <div class="tline"><span class="tg">xl · 20px</span><span class="sp" style="font-family:var(--font-heading);font-size:var(--text-xl);font-weight:600">Documentos necessários</span></div>
+
+      <h3 class="sub">Corpo · Public Sans</h3>
+      <div class="tline"><span class="tg">lg · 18px</span><span class="sp" style="font-size:var(--text-lg)">Texto de destaque e leads de seção.</span></div>
+      <div class="tline"><span class="tg">base · 16px</span><span class="sp" style="font-size:var(--text-base)">Corpo de leitura padrão em prosa e interface.</span></div>
+      <div class="tline"><span class="tg">sm · 14px</span><span class="sp" style="font-size:var(--text-sm);color:var(--muted-foreground)">Apoio, legendas e descrições de campo.</span></div>
+      <div class="wrow">
+        <div style="font-weight:400">Regular<b>400</b></div>
+        <div style="font-weight:500">Medium<b>500</b></div>
+        <div style="font-weight:600">Semibold<b>600</b></div>
+        <div style="font-weight:700">Bold<b>700</b></div>
+      </div>
+
+      <h3 class="sub">Caixa-alta espaçada — a assinatura do Sera</h3>
+      <div class="two">
+        <div class="stack">
+          <div><span class="sb-eyebrow">Planos e preços</span><div style="font-family:var(--font-mono);font-size:var(--text-3xl);font-weight:500;margin-top:6px">R$ 149/mês</div></div>
+          <p class="note" style="margin:0">Eyebrow: 12px · 600 · <span class="tok">0.18em</span> · uppercase. Valores em Geist Mono com <code class="inline">tabular-nums</code>.</p>
+        </div>
+        <div class="stack">
+          <div class="sb-label">Rótulo de campo</div>
+          <div class="sb-label" style="color:var(--sb-blue)">Texto de botão</div>
+          <div class="sb-label" style="color:var(--muted-foreground)">Cabeçalho de tabela</div>
+          <p class="note" style="margin:0">Rótulos, botões, tabs e headers: 12px · 600 · <span class="tok">0.08em</span> · uppercase.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GEOMETRIA ============ -->
+    <section id="geometria">
+      <div class="h-sec"><h2>Geometria</h2><span class="n">04</span></div>
+      <p class="lede">O estilo Sera é tipográfico e editorial: hairlines de 1px e campos sublinhados. A Suitebras suaviza apenas as duas superfícies interativas — <b>botões 4px</b> e <b>cards 8px</b>; todo o resto permanece quadrado.</p>
+      <div class="g4">
+        <div><div class="gbox" style="border-radius:var(--radius-btn);border-color:var(--foreground)">botão · 4px</div><div class="logo-cap">--radius-btn</div></div>
+        <div><div class="gbox" style="border-radius:var(--radius-card)">card · 8px</div><div class="logo-cap">--radius-card</div></div>
+        <div><div class="gbox" style="border:0;border-bottom:1px solid var(--input);align-items:flex-end;padding-bottom:6px">campo sublinhado</div><div class="logo-cap">.sb-input · quadrado</div></div>
+        <div><div class="gbox" style="border-radius:50%;width:68px;margin:0 auto">círculo</div><div class="logo-cap" style="text-align:center">avatar / dot</div></div>
+      </div>
+      <p class="note">Badges, tabs, inputs, tabelas e faixas seguem quadrados — o arredondamento é reservado a botões e cards, para dar-lhes a leitura de "coisa clicável" e "superfície". Dialog, menu, toast e alert usam o raio de card.</p>
+    </section>
+
+    <!-- ============ ESPAÇAMENTO ============ -->
+    <section id="espacamento">
+      <div class="h-sec"><h2>Espaçamento</h2><span class="n">05</span></div>
+      <p class="lede">Grade base de 4px. Respiro generoso é um valor da marca — seções respiram em 64–96px, conteúdo em coluna de até 1200px.</p>
+      <div class="srow"><span class="tg">--space-1 · 4px</span><div class="bar" style="width:4px"></div></div>
+      <div class="srow"><span class="tg">--space-2 · 8px</span><div class="bar" style="width:8px"></div></div>
+      <div class="srow"><span class="tg">--space-3 · 12px</span><div class="bar" style="width:12px"></div></div>
+      <div class="srow"><span class="tg">--space-4 · 16px</span><div class="bar" style="width:16px"></div></div>
+      <div class="srow"><span class="tg">--space-6 · 24px</span><div class="bar" style="width:24px"></div></div>
+      <div class="srow"><span class="tg">--space-8 · 32px</span><div class="bar" style="width:32px"></div></div>
+      <div class="srow"><span class="tg">--space-12 · 48px</span><div class="bar" style="width:48px"></div></div>
+      <div class="srow"><span class="tg">--space-16 · 64px</span><div class="bar" style="width:64px"></div></div>
+      <div class="srow"><span class="tg">--space-24 · 96px</span><div class="bar" style="width:96px"></div></div>
+    </section>
+
+    <!-- ============ ELEVAÇÃO ============ -->
+    <section id="elevacao">
+      <div class="h-sec"><h2>Elevação</h2><span class="n">06</span></div>
+      <p class="lede">Superfícies se separam por <b>borda</b>, não por sombra. As sombras — tingidas de Blue Dark — existem só para camadas que realmente flutuam.</p>
+      <div class="shrow">
+        <div><div class="sc" style="box-shadow:none"></div><div class="l">none<br>cards</div></div>
+        <div><div class="sc" style="box-shadow:0 1px 2px rgba(0,56,105,.08)"></div><div class="l">sm</div></div>
+        <div><div class="sc" style="box-shadow:0 4px 12px rgba(0,56,105,.10)"></div><div class="l">md<br>menu</div></div>
+        <div><div class="sc" style="box-shadow:0 12px 28px rgba(0,56,105,.12)"></div><div class="l">lg<br>toast</div></div>
+        <div><div class="sc" style="box-shadow:0 24px 48px rgba(0,56,105,.14)"></div><div class="l">xl<br>dialog</div></div>
+      </div>
+    </section>
+
+    <!-- ============ ÍCONES ============ -->
+    <section id="icones">
+      <div class="h-sec"><h2>Ícones</h2><span class="n">07</span></div>
+      <p class="lede"><b>Phosphor Icons</b>, definido pelo preset. Peso <b>regular</b> sempre; <b>fill</b> apenas para estado ativo. Caixa de 16 a 24px.</p>
+      <div class="igrid">
+        <div class="i"><i class="ph ph-map-pin"></i><span>map-pin</span></div>
+        <div class="i"><i class="ph ph-envelope"></i><span>envelope</span></div>
+        <div class="i"><i class="ph ph-file-text"></i><span>file-text</span></div>
+        <div class="i"><i class="ph ph-buildings"></i><span>buildings</span></div>
+        <div class="i"><i class="ph ph-shield-check"></i><span>shield-check</span></div>
+        <div class="i"><i class="ph ph-phone"></i><span>phone</span></div>
+        <div class="i"><i class="ph ph-check-circle"></i><span>check-circle</span></div>
+        <div class="i"><i class="ph ph-warning"></i><span>warning</span></div>
+        <div class="i"><i class="ph ph-magnifying-glass"></i><span>search</span></div>
+        <div class="i"><i class="ph ph-bell"></i><span>bell</span></div>
+        <div class="i"><i class="ph ph-gear"></i><span>gear</span></div>
+        <div class="i"><i class="ph ph-user"></i><span>user</span></div>
+        <div class="i"><i class="ph ph-squares-four"></i><span>squares-four</span></div>
+        <div class="i"><i class="ph ph-download-simple"></i><span>download</span></div>
+        <div class="i"><i class="ph ph-arrow-right"></i><span>arrow-right</span></div>
+        <div class="i"><i class="ph ph-caret-down"></i><span>caret-down</span></div>
+        <div class="i"><i class="ph ph-plus"></i><span>plus</span></div>
+        <div class="i"><i class="ph ph-x"></i><span>x</span></div>
+        <div class="i"><i class="ph ph-lifebuoy"></i><span>lifebuoy</span></div>
+        <div class="i"><i class="ph-fill ph-star" style="color:var(--sb-blue)"></i><span>star · fill</span></div>
+      </div>
+    </section>
+
+    <!-- ============ BOTÕES ============ -->
+    <section id="botoes">
+      <div class="h-sec"><h2>Botões</h2><span class="n">08</span></div>
+      <p class="lede">Sete variantes. <code class="inline">primary</code> para a ação principal; <code class="inline">cta</code> em Blue Dark para <b>uma</b> chamada de maior peso por tela — o manual pede parcimônia.</p>
+      <div class="demo">
+        <div class="row">
+          <button class="sb-btn sb-btn--primary sb-btn--md">Ver planos</button>
+          <button class="sb-btn sb-btn--cta sb-btn--md">Contratar agora</button>
+          <button class="sb-btn sb-btn--secondary sb-btn--md">Secundário</button>
+          <button class="sb-btn sb-btn--outline sb-btn--md">Outline</button>
+          <button class="sb-btn sb-btn--ghost sb-btn--md">Ghost</button>
+          <button class="sb-btn sb-btn--link sb-btn--md">Link</button>
+          <button class="sb-btn sb-btn--destructive sb-btn--md">Excluir</button>
+        </div>
+      </div>
+      <div class="demo">
+        <div class="row">
+          <button class="sb-btn sb-btn--primary sb-btn--sm">Small</button>
+          <button class="sb-btn sb-btn--primary sb-btn--md">Medium</button>
+          <button class="sb-btn sb-btn--primary sb-btn--lg">Large</button>
+          <button class="sb-btn sb-btn--outline sb-btn--md"><i class="ph ph-plus"></i> Com ícone</button>
+          <button class="sb-btn sb-btn--ghost sb-btn--md sb-btn--icon" aria-label="Menu"><i class="ph ph-list"></i></button>
+          <button class="sb-btn sb-btn--primary sb-btn--md"><span class="sb-btn__spinner"></span> Salvando</button>
+          <button class="sb-btn sb-btn--primary sb-btn--md" disabled="">Desativado</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FORMULÁRIOS ============ -->
+    <section id="formularios">
+      <div class="h-sec"><h2>Formulários</h2><span class="n">09</span></div>
+      <p class="lede">Campos sublinhados, rótulos em caixa-alta, checkbox quadrado. O estado marcado usa preto (<code class="inline">--foreground</code>), reservando o azul para ações.</p>
+      <div class="demo two">
+        <div class="col">
+          <div class="sb-field"><label class="sb-label">E-mail <span class="sb-label__req">*</span></label><input class="sb-input" placeholder="seu@email.com"></div>
+          <div class="sb-field"><label class="sb-label">CNPJ</label><input class="sb-input sb-input--invalid" value="00.000.000/0001"><span class="sb-help sb-help--error">CNPJ inválido</span></div>
+          <div class="sb-field"><label class="sb-label">Endereço</label><span class="sb-select-wrap"><select class="sb-select"><option>São Paulo — Av. Paulista</option><option>Rio de Janeiro — Centro</option></select></span></div>
+          <div class="sb-field"><label class="sb-label">Mensagem</label><textarea class="sb-textarea" placeholder="Como podemos ajudar?"></textarea></div>
+          <div class="sb-field"><label class="sb-label">Busca (boxed)</label><input class="sb-input sb-input--boxed sb-input--sm" placeholder="Buscar endereços…"></div>
+        </div>
+        <div class="col">
+          <label class="sb-choice"><input type="checkbox" class="sb-checkbox" checked=""><span>Quero receber novidades</span></label>
+          <label class="sb-choice"><input type="checkbox" class="sb-checkbox"><span>Aceito os termos de uso</span></label>
+          <label class="sb-choice"><input type="checkbox" class="sb-checkbox" disabled=""><span>Opção desativada</span></label>
+          <div class="sb-separator sb-separator--h"></div>
+          <label class="sb-choice"><input type="radio" name="pl" class="sb-radio" checked=""><span>Plano mensal</span></label>
+          <label class="sb-choice"><input type="radio" name="pl" class="sb-radio"><span>Plano anual · -20%</span></label>
+          <div class="sb-separator sb-separator--h"></div>
+          <label class="sb-switch"><input type="checkbox" role="switch" checked=""><span class="sb-switch__track"><span class="sb-switch__thumb"></span></span><span>Notificações por e-mail</span></label>
+          <label class="sb-switch"><input type="checkbox" role="switch"><span class="sb-switch__track"><span class="sb-switch__thumb"></span></span><span>Renovação automática</span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXIBIÇÃO ============ -->
+    <section id="exibicao">
+      <div class="h-sec"><h2>Exibição</h2><span class="n">10</span></div>
+      <p class="lede">Card, badge, avatar e separador. Cards têm borda e nenhuma sombra; no hover a borda escurece.</p>
+      <div class="demo two">
+        <div class="sb-card sb-card--interactive" style="max-width:320px">
+          <div class="sb-card__header"><div class="sb-card__title">Endereço fiscal</div><div class="sb-card__desc">Av. Paulista, 1000 — São Paulo</div></div>
+          <div class="sb-card__body" style="padding-top:14px;font-size:14px;color:var(--muted-foreground)">Receba correspondências e use o endereço em documentos oficiais.</div>
+          <div class="sb-card__footer"><button class="sb-btn sb-btn--primary sb-btn--sm">Contratar</button><button class="sb-btn sb-btn--link sb-btn--sm">Detalhes</button></div>
+        </div>
+        <div class="stack">
+          <div>
+            <h3 class="sub" style="margin-top:0">Badges</h3>
+            <div class="row">
+              <span class="sb-badge sb-badge--primary">Novo</span>
+              <span class="sb-badge sb-badge--solid">Destaque</span>
+              <span class="sb-badge sb-badge--brand">Popular</span>
+              <span class="sb-badge sb-badge--secondary">Rascunho</span>
+              <span class="sb-badge sb-badge--outline">Padrão</span>
+              <span class="sb-badge sb-badge--success"><i class="ph ph-check"></i> Ativo</span>
+              <span class="sb-badge sb-badge--warning">Pendente</span>
+              <span class="sb-badge sb-badge--danger">Vencido</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="sub">Avatares</h3>
+            <div class="row">
+              <span class="sb-avatar sb-avatar--sm">AR</span>
+              <span class="sb-avatar sb-avatar--md">MC</span>
+              <span class="sb-avatar sb-avatar--lg">JS</span>
+              <span class="sb-avatar sb-avatar--md sb-avatar--brand">SB</span>
+            </div>
+          </div>
+          <div>
+            <h3 class="sub">Separador &amp; tecla</h3>
+            <div class="row" style="height:20px;font-size:13px">Planos <span class="sb-separator sb-separator--v"></span> Preços <span class="sb-separator sb-separator--v"></span> FAQ <span style="margin-left:14px"><span class="sb-kbd">⌘</span> <span class="sb-kbd">K</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NAVEGAÇÃO ============ -->
+    <section id="navegacao">
+      <div class="h-sec"><h2>Navegação</h2><span class="n">11</span></div>
+      <p class="lede">Tabs sublinhadas (não pílula), breadcrumb em caixa-alta e paginação quadrada.</p>
+      <div class="demo">
+        <h3 class="sub" style="margin-top:0">Breadcrumb</h3>
+        <ol class="sb-breadcrumb"><li><a href="#">Painel</a></li><li class="sb-breadcrumb__sep">/</li><li><a href="#">Endereços</a></li><li class="sb-breadcrumb__sep">/</li><li aria-current="page">Av. Paulista</li></ol>
+        <h3 class="sub">Tabs</h3>
+        <div class="sb-tabs__list" role="tablist" id="tabs">
+          <button class="sb-tab" role="tab">Visão geral</button>
+          <button class="sb-tab" role="tab" aria-selected="true">Planos</button>
+          <button class="sb-tab" role="tab">Faturas</button>
+          <button class="sb-tab" role="tab">Configurações</button>
+        </div>
+        <h3 class="sub">Paginação</h3>
+        <ul class="sb-pagination">
+          <li><button class="sb-page" disabled=""><i class="ph ph-caret-left"></i></button></li>
+          <li><a class="sb-page" href="#navegacao" aria-current="page">1</a></li>
+          <li><a class="sb-page" href="#navegacao">2</a></li>
+          <li><a class="sb-page" href="#navegacao">3</a></li>
+          <li><span class="sb-page" style="cursor:default">…</span></li>
+          <li><a class="sb-page" href="#navegacao">12</a></li>
+          <li><button class="sb-page"><i class="ph ph-caret-right"></i></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ FEEDBACK ============ -->
+    <section id="feedback">
+      <div class="h-sec"><h2>Feedback</h2><span class="n">12</span></div>
+      <p class="lede">Alertas com barra lateral de 3px na cor do estado, toast escuro para confirmações e progresso linear.</p>
+      <div class="demo two">
+        <div class="stack">
+          <div class="sb-alert sb-alert--info"><span class="sb-alert__icon"><i class="ph ph-info"></i></span><div class="sb-alert__body"><div class="sb-alert__title">Dica</div>Use o endereço em notas fiscais e no cartão de visita.</div></div>
+          <div class="sb-alert sb-alert--success"><span class="sb-alert__icon"><i class="ph ph-check-circle"></i></span><div class="sb-alert__body"><div class="sb-alert__title">Pagamento confirmado</div>Seu endereço já está ativo.</div></div>
+          <div class="sb-alert sb-alert--warning"><span class="sb-alert__icon"><i class="ph ph-warning"></i></span><div class="sb-alert__body"><div class="sb-alert__title">Ação necessária</div>Confirme seu e-mail para continuar.</div></div>
+          <div class="sb-alert sb-alert--danger"><span class="sb-alert__icon"><i class="ph ph-warning-circle"></i></span><div class="sb-alert__body"><div class="sb-alert__title">Fatura vencida</div>Regularize para manter os serviços.</div></div>
+        </div>
+        <div class="stack">
+          <div class="sb-toast sb-toast--success" style="width:100%"><i class="ph ph-check-circle"></i><div><div class="sb-toast__title">Endereço contratado</div><div class="sb-toast__desc">Av. Paulista, 1000 já está ativo.</div></div><button class="sb-toast__action">Ver</button></div>
+          <div class="sb-toast sb-toast--light" style="width:100%"><i class="ph ph-envelope"></i><div><div class="sb-toast__title">Nova correspondência</div><div class="sb-toast__desc">Recebida hoje às 14:20.</div></div><button class="sb-toast__action">Abrir</button></div>
+          <div style="margin-top:6px">
+            <div class="sb-progress-row"><span>Documentos enviados</span><b>2/3</b></div>
+            <div class="sb-progress"><div class="sb-progress__bar" style="width:66%"></div></div>
+          </div>
+          <div style="display:flex;justify-content:center;padding-top:22px">
+            <span class="sb-tooltip" tabindex="0"><button class="sb-btn sb-btn--outline sb-btn--sm"><i class="ph ph-info"></i> Tooltip no hover</button><span class="sb-tooltip__pop">Endereço usado em notas fiscais</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DADOS ============ -->
+    <section id="dados">
+      <div class="h-sec"><h2>Dados</h2><span class="n">13</span></div>
+      <p class="lede">Tabela com header em caixa-alta e linhas hairline; skeleton e estado vazio para carregamento e listas sem conteúdo.</p>
+      <div class="demo">
+        <div style="overflow-x:auto"><table class="sb-table">
+          <thead><tr><th>Documento</th><th>Endereço</th><th>Status</th><th class="sb-table__num">Valor</th></tr></thead>
+          <tbody>
+            <tr><td><b>Receita Federal</b><div class="sb-table__sub">Ofício · 10 mar</div></td><td>Av. Paulista</td><td><span class="sb-badge sb-badge--danger">Não lida</span></td><td class="sb-table__num">—</td></tr>
+            <tr><td><b>Fatura #2026-003</b><div class="sb-table__sub">Mar 2026</div></td><td>Av. Paulista</td><td><span class="sb-badge sb-badge--warning">Em aberto</span></td><td class="sb-table__num">R$ 149,00</td></tr>
+            <tr><td><b>Fatura #2026-002</b><div class="sb-table__sub">Fev 2026</div></td><td>Centro · RJ</td><td><span class="sb-badge sb-badge--success">Paga</span></td><td class="sb-table__num">R$ 129,00</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="demo two">
+        <div>
+          <h3 class="sub" style="margin-top:0">Skeleton</h3>
+          <div style="display:flex;gap:12px;align-items:center">
+            <div class="sb-skeleton sb-skeleton--circle" style="width:40px;height:40px"></div>
+            <div style="flex:1;display:flex;flex-direction:column;gap:8px"><div class="sb-skeleton sb-skeleton--title"></div><div class="sb-skeleton sb-skeleton--text"></div></div>
+          </div>
+        </div>
+        <div class="sb-empty"><i class="ph ph-tray"></i><div class="sb-empty__title">Nenhuma correspondência</div><div class="sb-empty__desc">Quando algo chegar ao seu endereço, aparece aqui.</div><button class="sb-btn sb-btn--outline sb-btn--sm">Atualizar</button></div>
+      </div>
+    </section>
+
+    <!-- ============ OVERLAYS ============ -->
+    <section id="overlays">
+      <div class="h-sec"><h2>Overlays</h2><span class="n">14</span></div>
+      <p class="lede">Dialog, menu suspenso e accordion — as três camadas que ganham sombra.</p>
+      <div class="demo two">
+        <div class="stack">
+          <div class="stage">
+            <div class="sb-dialog" style="max-width:100%">
+              <div class="sb-dialog__header">
+                <div><div class="sb-dialog__title">Cancelar plano?</div><div class="sb-dialog__desc">Seu endereço deixa de valer no fim do ciclo atual.</div></div>
+                <button class="sb-dialog__close" aria-label="Fechar"><i class="ph ph-x"></i></button>
+              </div>
+              <div class="sb-dialog__footer" style="padding-top:22px"><button class="sb-btn sb-btn--ghost sb-btn--sm">Voltar</button><button class="sb-btn sb-btn--destructive sb-btn--sm">Cancelar plano</button></div>
+            </div>
+          </div>
+          <div class="sb-menu" style="width:230px">
+            <div class="sb-menu__label">Conta</div>
+            <button class="sb-menu__item"><i class="ph ph-user"></i> Perfil <span class="sb-menu__kbd">⇧P</span></button>
+            <button class="sb-menu__item"><i class="ph ph-gear"></i> Configurações</button>
+            <button class="sb-menu__item"><i class="ph ph-lifebuoy"></i> Suporte</button>
+            <div class="sb-menu__sep"></div>
+            <button class="sb-menu__item sb-menu__item--danger"><i class="ph ph-sign-out"></i> Sair</button>
+          </div>
+        </div>
+        <div>
+          <h3 class="sub" style="margin-top:0">Accordion</h3>
+          <div class="sb-accordion" id="acc">
+            <div class="sb-accordion__item"><button class="sb-accordion__trigger" aria-expanded="true">Preciso de contrato de locação? <i class="ph ph-plus"></i></button><div class="sb-accordion__content">Não. O contrato de prestação de serviço da Suitebras é aceito pela Receita Federal e pelas juntas comerciais.</div></div>
+            <div class="sb-accordion__item"><button class="sb-accordion__trigger" aria-expanded="false">Posso cancelar quando quiser? <i class="ph ph-plus"></i></button><div class="sb-accordion__content" hidden="">Sim. Não há fidelidade — o cancelamento vale a partir do próximo ciclo.</div></div>
+            <div class="sb-accordion__item"><button class="sb-accordion__trigger" aria-expanded="false">Como recebo correspondências? <i class="ph ph-plus"></i></button><div class="sb-accordion__content" hidden="">Digitalizamos e notificamos pelo painel. Você decide se quer retirar ou reenviar.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KITS ============ -->
+    <section id="kits">
+      <div class="h-sec"><h2>UI kits</h2><span class="n">15</span></div>
+      <p class="lede">Quatro telas completas montadas com o sistema — a referência de como as peças se combinam em produto real.</p>
+
+      <div class="kit-item">
+        <div class="kit-label"><b>Site institucional</b><span>Hero, como funciona, endereços, planos com toggle mensal/anual, faixa de CTA e rodapé.</span></div>
+        <div class="kit-shell" data-w="1280">
+          <div class="kit-frame" id="kit-site" style="width:1280px">
+  <header class="site">
+    <div class="wrap nav">
+      <img class="logo" src="assets/logo/suitebras-positivo.svg" alt="Suitebras">
+      <nav class="nav__links">
+        <a href="#">Planos</a>
+        <a href="#">Endereços</a>
+        <a href="#">Como funciona</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="nav__actions">
+        <button class="sb-btn sb-btn--ghost sb-btn--md">Entrar</button>
+        <button class="sb-btn sb-btn--primary sb-btn--md">Contratar</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <span class="sb-eyebrow">Endereço fiscal e comercial</span>
+        <h1 style="margin-top:16px">Sua empresa no endereço certo.</h1>
+        <p class="lead">Um endereço comercial de verdade em localizações valorizadas — sem alugar uma sala inteira.</p>
+        <div class="cta-row">
+          <button class="sb-btn sb-btn--cta sb-btn--lg">Ver planos</button>
+          <button class="sb-btn sb-btn--outline sb-btn--lg"><i class="ph ph-phone"></i> Falar com vendas</button>
+        </div>
+        <div class="trust"><i class="ph ph-shield-check" style="color:var(--sb-blue)"></i> Mais de 5.000 empresas já usam a Suitebras</div>
+      </div>
+      <div class="hero__media">
+        <div class="pl" style="position:absolute;inset:0">foto — recepção do escritório</div>
+        <div class="hero__badge">
+          <span class="ic"><i class="ph ph-map-pin"></i></span>
+          <div>
+            <div style="font-weight:700;font-size:14px">Av. Paulista, 1000</div>
+            <div style="font-size:12px;color:var(--muted-foreground)">São Paulo · SP</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div class="trustbar">
+    <div class="wrap trustbar__in">
+      <span class="trustbar__label">Confiança de</span>
+      <div class="trustbar__logos">
+        <div class="pl">logo</div><div class="pl">logo</div><div class="pl">logo</div><div class="pl">logo</div><div class="pl">logo</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sb-eyebrow">Como funciona</span>
+        <h2>Ativo em três passos</h2>
+        <p>Contrate online e comece a usar seu novo endereço no mesmo dia.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><div class="ic"><i class="ph ph-map-pin"></i></div><h3>Escolha o endereço</h3><p>Selecione entre localizações premium em capitais de todo o Brasil.</p></div>
+        <div class="step"><div class="ic"><i class="ph ph-file-text"></i></div><h3>Contrate online</h3><p>Envie seus documentos pelo painel. Aprovação rápida e 100% digital.</p></div>
+        <div class="step"><div class="ic"><i class="ph ph-envelope"></i></div><h3>Receba tudo</h3><p>Correspondências digitalizadas, notificações e serviços sob demanda.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sb-eyebrow">Endereços</span>
+        <h2>Localizações que valorizam sua marca</h2>
+      </div>
+      <div class="addr-grid">
+        <div class="sb-card addr"><div class="pl">foto — fachada</div><div class="body"><h3>Av. Paulista</h3><div class="loc">São Paulo · SP</div><div class="row"><span class="sb-badge sb-badge--primary">Mais procurado</span><span class="price">R$ 149/mês</span></div></div></div>
+        <div class="sb-card addr"><div class="pl">foto — fachada</div><div class="body"><h3>Centro</h3><div class="loc">Rio de Janeiro · RJ</div><div class="row"><span class="sb-badge sb-badge--secondary">Disponível</span><span class="price">R$ 129/mês</span></div></div></div>
+        <div class="sb-card addr"><div class="pl">foto — fachada</div><div class="body"><h3>Savassi</h3><div class="loc">Belo Horizonte · MG</div><div class="row"><span class="sb-badge sb-badge--secondary">Disponível</span><span class="price">R$ 119/mês</span></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="plans-wrap">
+    <section class="block">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sb-eyebrow">Planos</span>
+          <h2>Escolha o plano ideal</h2>
+          <p>Sem fidelidade. Cancele quando quiser.</p>
+        </div>
+        <div style="text-align:center">
+          <div class="toggle" id="toggle">
+            <button class="active" data-period="mensal">Mensal</button>
+            <button data-period="anual">Anual · -20%</button>
+          </div>
+        </div>
+        <div class="plan-grid">
+          <div class="sb-card plan">
+            <div class="sb-card__body">
+              <div class="pname">Digital</div>
+              <div class="pdesc">Endereço comercial para receber correspondências.</div>
+              <div class="price" data-mensal="R$ 89" data-anual="R$ 71">R$ 89<small>/mês</small></div>
+              <ul>
+                <li><i class="ph ph-check"></i> Endereço comercial</li>
+                <li><i class="ph ph-check"></i> Correspondências digitalizadas</li>
+                <li><i class="ph ph-check"></i> Painel de gestão</li>
+              </ul>
+              <button class="sb-btn sb-btn--outline sb-btn--md sb-btn--full" style="margin-top:24px">Contratar</button>
+            </div>
+          </div>
+          <div class="sb-card plan feat">
+            <div class="sb-card__body">
+              <div style="display:flex;justify-content:space-between;align-items:center"><div class="pname">Fiscal</div><span class="sb-badge sb-badge--solid">Popular</span></div>
+              <div class="pdesc">Endereço fiscal para registro e emissão de notas.</div>
+              <div class="price" data-mensal="R$ 149" data-anual="R$ 119">R$ 149<small>/mês</small></div>
+              <ul>
+                <li><i class="ph ph-check"></i> Tudo do Digital</li>
+                <li><i class="ph ph-check"></i> Endereço fiscal (CNPJ)</li>
+                <li><i class="ph ph-check"></i> Inscrição municipal</li>
+                <li><i class="ph ph-check"></i> Suporte prioritário</li>
+              </ul>
+              <button class="sb-btn sb-btn--cta sb-btn--md sb-btn--full" style="margin-top:24px">Contratar</button>
+            </div>
+          </div>
+          <div class="sb-card plan">
+            <div class="sb-card__body">
+              <div class="pname">Completo</div>
+              <div class="pdesc">Endereço, atendimento telefônico e salas por hora.</div>
+              <div class="price" data-mensal="R$ 279" data-anual="R$ 223">R$ 279<small>/mês</small></div>
+              <ul>
+                <li><i class="ph ph-check"></i> Tudo do Fiscal</li>
+                <li><i class="ph ph-check"></i> Número comercial + secretária</li>
+                <li><i class="ph ph-check"></i> 8h de salas de reunião/mês</li>
+              </ul>
+              <button class="sb-btn sb-btn--outline sb-btn--md sb-btn--full" style="margin-top:24px">Contratar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="cta-band">
+        <img src="assets/logo/suitebras-negativo.svg" alt="Suitebras">
+        <h2>Pronto para dar um endereço à altura da sua empresa?</h2>
+        <p>Contrate em minutos, 100% online. Comece hoje com 7 dias de garantia.</p>
+        <button class="sb-btn sb-btn--lg btn-on-dark">Criar conta</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <img src="assets/logo/suitebras-negativo.svg" alt="Suitebras">
+          <p class="tag">Sua empresa no endereço certo. Endereços fiscais e comerciais em todo o Brasil.</p>
+        </div>
+        <div><h4>Produto</h4><ul><li><a href="#">Planos</a></li><li><a href="#">Endereços</a></li><li><a href="#">Como funciona</a></li></ul></div>
+        <div><h4>Empresa</h4><ul><li><a href="#">Sobre</a></li><li><a href="#">Blog</a></li><li><a href="#">Contato</a></li></ul></div>
+        <div><h4>Legal</h4><ul><li><a href="#">Termos</a></li><li><a href="#">Privacidade</a></li></ul></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Suitebras. Todos os direitos reservados.</span><span>CNPJ 00.000.000/0001-00</span></div>
+    </div>
+  </footer>
+
+  
+</div>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-label"><b>Blog — home</b><span>Intro com chips de categoria, post em destaque, grade de 6 posts e faixa de newsletter.</span></div>
+        <div class="kit-shell" data-w="1120">
+          <div class="kit-frame" id="kit-blog" style="width:1120px">
+  <header class="site">
+    <div class="wrap nav">
+      <img class="logo" src="assets/logo/suitebras-positivo.svg" alt="Suitebras">
+      <nav class="nav__links">
+        <a href="#">Produto</a>
+        <a href="#" class="active">Blog</a>
+        <a href="#">Ajuda</a>
+        <a href="#">Contato</a>
+      </nav>
+      <button class="sb-btn sb-btn--primary sb-btn--md">Assinar</button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="page-head">
+      <span class="sb-eyebrow">Blog</span>
+      <h1 style="margin-top:14px">Ideias para sua empresa crescer</h1>
+      <p>Endereço fiscal, abertura de CNPJ, gestão e bastidores da Suitebras.</p>
+      <div class="cats">
+        <span class="sb-badge sb-badge--solid">Todos</span>
+        <span class="sb-badge sb-badge--outline">Abertura de empresa</span>
+        <span class="sb-badge sb-badge--outline">Endereço fiscal</span>
+        <span class="sb-badge sb-badge--outline">Gestão</span>
+        <span class="sb-badge sb-badge--outline">Impostos</span>
+      </div>
+    </div>
+
+    <a class="post-link" href="post.html">
+      <article class="featured">
+        <div class="pl">imagem de capa — post em destaque</div>
+        <div>
+          <div class="meta"><span class="sb-badge sb-badge--primary">Endereço fiscal</span><span style="font-size:13px;color:var(--muted-foreground)">Leitura de 6 min</span></div>
+          <h2>Endereço fiscal x comercial: qual a diferença e quando usar cada um</h2>
+          <p>Entenda de uma vez por todas o que muda entre os dois, o impacto no seu CNPJ e como escolher sem erro.</p>
+          <div class="byline"><span class="sb-avatar sb-avatar--sm">MC</span> Marina Costa · 12 mar 2026</div>
+        </div>
+      </article>
+    </a>
+
+    <div class="grid-head">
+      <h3>Mais recentes</h3>
+      <a href="#" class="sb-btn sb-btn--link sb-btn--md">Ver todos <i class="ph ph-arrow-right"></i></a>
+    </div>
+    <div class="posts">
+      <a class="post-link" href="post.html"><article class="post"><div class="pl">imagem</div><div class="cat"><span class="sb-badge sb-badge--secondary">Abertura de empresa</span></div><h4>Como abrir um MEI em 2026: guia completo</h4><p>Passo a passo atualizado, custos e os erros mais comuns de quem está começando.</p><div class="byline"><span class="sb-avatar sb-avatar--sm">JS</span> João Silva · 8 mar</div></article></a>
+      <a class="post-link" href="post.html"><article class="post"><div class="pl">imagem</div><div class="cat"><span class="sb-badge sb-badge--secondary">Gestão</span></div><h4>5 sinais de que sua empresa precisa de um endereço melhor</h4><p>Credibilidade, correspondências e o que os clientes veem antes de fechar negócio.</p><div class="byline"><span class="sb-avatar sb-avatar--sm">AR</span> Ana Ribeiro · 3 mar</div></article></a>
+      <a class="post-link" href="post.html"><article class="post"><div class="pl">imagem</div><div class="cat"><span class="sb-badge sb-badge--secondary">Impostos</span></div><h4>Simples Nacional: o que muda para prestadores de serviço</h4><p>As novas faixas explicadas em português claro, sem juridiquês.</p><div class="byline"><span class="sb-avatar sb-avatar--sm">MC</span> Marina Costa · 27 fev</div></article></a>
+      <a class="post-link" href="post.html"><article class="post"><div class="pl">imagem</div><div class="cat"><span class="sb-badge sb-badge--secondary">Endereço fiscal</span></div><h4>Posso usar meu endereço residencial no CNPJ?</h4><p>Os riscos, as exceções e por que um endereço comercial costuma sair mais barato.</p><div class="byline"><span class="sb-avatar sb-avatar--sm">JS</span> João Silva · 20 fev</div></article></a>
+      <a class="post-link" href="post.html"><article class="post"><div class="pl">imagem</div><div class="cat"><span class="sb-badge sb-badge--secondary">Gestão</span></div><h4>Home office sem endereço da casa exposto</h4><p>Como separar vida pessoal e empresa mantendo tudo regular.</p><div class="byline"><span class="sb-avatar sb-avatar--sm">AR</span> Ana Ribeiro · 14 fev</div></article></a>
+      <a class="post-link" href="post.html"><article class="post"><div class="pl">imagem</div><div class="cat"><span class="sb-badge sb-badge--secondary">Abertura de empresa</span></div><h4>Checklist para abrir sua empresa em 7 dias</h4><p>Tudo o que você precisa ter em mãos antes de começar o processo.</p><div class="byline"><span class="sb-avatar sb-avatar--sm">MC</span> Marina Costa · 6 fev</div></article></a>
+    </div>
+
+    <div class="news">
+      <h3>Receba os melhores conteúdos</h3>
+      <p>Um e-mail por semana com o que importa para quem tem empresa. Sem spam.</p>
+      <form onsubmit="return false">
+        <input class="sb-input" placeholder="seu@email.com" type="email">
+        <button class="sb-btn sb-btn--lg btn-on-dark">Assinar</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site">
+    <div class="wrap foot">
+      <img src="assets/logo/suitebras-positivo.svg" alt="Suitebras" style="height:24px">
+      <span>© 2026 Suitebras</span>
+    </div>
+  </footer>
+  </div>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-label"><b>Blog — artigo</b><span>Leitura centrada: capa, prosa com H2/lista/citação/figura, tags, autor e relacionados.</span></div>
+        <div class="kit-shell" data-w="1120">
+          <div class="kit-frame" id="kit-post" style="width:1120px">
+  <header class="site">
+    <div class="wrap nav">
+      <img class="logo" src="assets/logo/suitebras-positivo.svg" alt="Suitebras">
+      <nav class="nav__links"><a href="#">Produto</a><a href="index.html" class="active">Blog</a><a href="#">Ajuda</a><a href="#">Contato</a></nav>
+      <button class="sb-btn sb-btn--primary sb-btn--md">Assinar</button>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="article-head">
+      <a class="back" href="index.html"><i class="ph ph-arrow-left"></i> Voltar ao blog</a>
+      <div style="margin-bottom:18px"><span class="sb-badge sb-badge--primary">Endereço fiscal</span></div>
+      <h1>Endereço fiscal x comercial: qual a diferença?</h1>
+      <div class="byline"><span class="sb-avatar sb-avatar--sm">MC</span> Marina Costa · 12 mar 2026 · leitura de 6 min</div>
+    </div>
+
+    <div class="cover"><div class="pl">imagem de capa do artigo</div></div>
+
+    <article class="prose">
+      <p class="lead-p">Na hora de abrir ou regularizar uma empresa, dois termos sempre aparecem — e são facilmente confundidos. Entender a diferença evita dor de cabeça com a Receita e economiza dinheiro.</p>
+      <p>O endereço fiscal é o que consta no seu CNPJ: é onde a empresa está oficialmente registrada perante os órgãos públicos. Já o endereço comercial é onde você recebe clientes, correspondências e constrói a imagem da marca. Muitas vezes eles coincidem — mas não precisam.</p>
+      <h2>Quando usar cada um</h2>
+      <p>Se você trabalha de casa, expor o endereço residencial no CNPJ pode ser arriscado e nem sempre é permitido pelo condomínio ou pela prefeitura. É aí que um endereço fiscal contratado resolve.</p>
+      <ul>
+        <li><i class="ph ph-check-circle"></i> Registro de CNPJ e emissão de notas fiscais</li>
+        <li><i class="ph ph-check-circle"></i> Recebimento de correspondências oficiais</li>
+        <li><i class="ph ph-check-circle"></i> Credibilidade em uma localização valorizada</li>
+      </ul>
+      <blockquote>Um bom endereço não é vaidade — é a primeira coisa que um cliente pesquisa antes de fechar negócio.</blockquote>
+      <figure><div class="pl">diagrama — fiscal vs comercial</div><figcaption>Como os dois endereços se relacionam no seu cadastro.</figcaption></figure>
+      <h2>E o custo?</h2>
+      <p>Contratar um endereço fiscal costuma custar uma fração do aluguel de uma sala comercial, sem contas de luz, IPTU ou contrato de longo prazo. Na Suitebras, os planos começam em R$ 89/mês.</p>
+    </article>
+
+    <div class="tags">
+      <span style="font-size:13px;color:var(--muted-foreground);margin-right:4px">Tags:</span>
+      <span class="sb-badge sb-badge--outline">CNPJ</span>
+      <span class="sb-badge sb-badge--outline">Endereço fiscal</span>
+      <span class="sb-badge sb-badge--outline">Regularização</span>
+    </div>
+
+    <div class="sb-card author-card">
+      <span class="sb-avatar sb-avatar--lg">MC</span>
+      <div class="txt"><h4>Marina Costa</h4><p>Especialista em regularização de empresas na Suitebras. Escreve sobre burocracia sem burocracia.</p></div>
+    </div>
+
+    <section class="related">
+      <h3>Continue lendo</h3>
+      <div class="rel-grid">
+        <a class="post-link" href="post.html" style="color:inherit;text-decoration:none"><article class="rel"><div class="pl">imagem</div><h4>Como abrir um MEI em 2026</h4><p>Guia completo e atualizado.</p></article></a>
+        <a class="post-link" href="post.html" style="color:inherit;text-decoration:none"><article class="rel"><div class="pl">imagem</div><h4>Posso usar meu endereço residencial no CNPJ?</h4><p>Riscos e exceções.</p></article></a>
+        <a class="post-link" href="post.html" style="color:inherit;text-decoration:none"><article class="rel"><div class="pl">imagem</div><h4>Simples Nacional: o que muda</h4><p>As novas faixas explicadas.</p></article></a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="site"><div class="wrap foot"><img src="assets/logo/suitebras-positivo.svg" alt="Suitebras" style="height:24px"><span>© 2026 Suitebras</span></div></footer>
+  </div>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="kit-label"><b>App — painel</b><span>Shell com sidebar e topbar, 4 KPIs, tabs, tabela de correspondências, gráfico e ações.</span></div>
+        <div class="kit-shell" data-w="1440">
+          <div class="kit-frame" id="kit-app" style="width:1440px">
+  <div class="app">
+    <aside class="side">
+      <div class="brand"><img src="assets/logo/monograma-positivo.svg" alt=""><span class="name">suitebras</span></div>
+      <div class="nav-lbl">Menu</div>
+      <div class="nav-group">
+        <button class="nav-item active"><i class="ph ph-squares-four"></i> Visão geral</button>
+        <button class="nav-item"><i class="ph ph-map-pin"></i> Endereços</button>
+        <button class="nav-item"><i class="ph ph-envelope"></i> Correspondências</button>
+        <button class="nav-item"><i class="ph ph-file-text"></i> Faturas</button>
+      </div>
+      <div class="nav-lbl">Conta</div>
+      <div class="nav-group">
+        <button class="nav-item"><i class="ph ph-gear"></i> Configurações</button>
+        <button class="nav-item"><i class="ph ph-lifebuoy"></i> Suporte</button>
+      </div>
+      <div class="user"><span class="sb-avatar sb-avatar--md">AR</span><div class="txt"><b>Ana Ribeiro</b><br><span>Studio Ana · SP</span></div></div>
+    </aside>
+
+    <div class="main">
+      <div class="topbar">
+        <h1>Visão geral</h1>
+        <div class="tools">
+          <div class="search"><i class="ph ph-magnifying-glass"></i><input class="sb-input sb-input--boxed sb-input--sm" placeholder="Buscar…"></div>
+          <button class="icon-btn"><i class="ph ph-bell"></i><span class="dot"></span></button>
+          <button class="sb-btn sb-btn--primary sb-btn--sm"><i class="ph ph-plus"></i> Novo endereço</button>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="stats">
+          <div class="sb-card stat"><div class="top"><span class="lbl">Endereços ativos</span><span class="ic"><i class="ph ph-map-pin"></i></span></div><div class="val">2</div><div class="sub">São Paulo · Rio de Janeiro</div></div>
+          <div class="sb-card stat"><div class="top"><span class="lbl">Correspondências</span><span class="ic"><i class="ph ph-envelope"></i></span></div><div class="val">14</div><div class="sub">3 não lidas</div></div>
+          <div class="sb-card stat"><div class="top"><span class="lbl">Próxima fatura</span><span class="ic"><i class="ph ph-calendar"></i></span></div><div class="val">R$ 149</div><div class="sub">vence em 20 mar</div></div>
+          <div class="sb-card stat"><div class="top"><span class="lbl">Plano</span><span class="ic"><i class="ph ph-star"></i></span></div><div class="val" style="font-size:var(--text-2xl)">Fiscal</div><div class="sub">renovação automática</div></div>
+        </div>
+
+        <div style="margin-bottom:18px">
+          <div class="sb-tabs__list" role="tablist">
+            <button class="sb-tab" role="tab" aria-selected="true" data-tab="corr">Correspondências</button>
+            <button class="sb-tab" role="tab" data-tab="fat">Faturas</button>
+          </div>
+        </div>
+
+        <div class="cols">
+          <div class="sb-card">
+            <div class="sb-card__body">
+              <div class="panel-head"><div class="sb-card__title" id="panelTitle">Correspondências recentes</div><button class="sb-btn sb-btn--link sb-btn--sm">Ver todas</button></div>
+
+              <table data-panel="corr">
+                <thead><tr><th>Remetente</th><th>Endereço</th><th>Recebido</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td><b>Receita Federal</b><div class="tsub">Ofício</div></td><td>Av. Paulista</td><td>10 mar</td><td><span class="sb-badge sb-badge--danger">Não lida</span></td></tr>
+                  <tr><td><b>Banco Itaú</b><div class="tsub">Extrato</div></td><td>Av. Paulista</td><td>8 mar</td><td><span class="sb-badge sb-badge--danger">Não lida</span></td></tr>
+                  <tr><td><b>Prefeitura de SP</b><div class="tsub">Notificação</div></td><td>Av. Paulista</td><td>5 mar</td><td><span class="sb-badge sb-badge--success">Lida</span></td></tr>
+                  <tr><td><b>Sicoob</b><div class="tsub">Correspondência</div></td><td>Centro · RJ</td><td>2 mar</td><td><span class="sb-badge sb-badge--success">Lida</span></td></tr>
+                </tbody>
+              </table>
+
+              <table data-panel="fat" hidden="">
+                <thead><tr><th>Fatura</th><th>Período</th><th>Valor</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td><b>#2026-003</b></td><td>Mar 2026</td><td>R$ 149,00</td><td><span class="sb-badge sb-badge--warning">Em aberto</span></td></tr>
+                  <tr><td><b>#2026-002</b></td><td>Fev 2026</td><td>R$ 149,00</td><td><span class="sb-badge sb-badge--success">Paga</span></td></tr>
+                  <tr><td><b>#2026-001</b></td><td>Jan 2026</td><td>R$ 149,00</td><td><span class="sb-badge sb-badge--success">Paga</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div style="display:flex;flex-direction:column;gap:18px">
+            <div class="sb-card">
+              <div class="sb-card__body">
+                <div class="sb-card__title" style="font-size:var(--text-base);margin-bottom:14px">Correspondências por mês</div>
+                <div class="chart">
+                  <div class="bar" style="height:40%"><span>Nov</span></div>
+                  <div class="bar" style="height:62%"><span>Dez</span></div>
+                  <div class="bar" style="height:52%"><span>Jan</span></div>
+                  <div class="bar" style="height:78%"><span>Fev</span></div>
+                  <div class="bar hi" style="height:100%"><span>Mar</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-card__body">
+                <div class="sb-card__title" style="font-size:var(--text-base);margin-bottom:14px">Ações rápidas</div>
+                <div class="qa">
+                  <button class="sb-btn sb-btn--outline sb-btn--sm sb-btn--full" style="justify-content:flex-start"><i class="ph ph-download-simple"></i> Baixar comprovante</button>
+                  <button class="sb-btn sb-btn--outline sb-btn--sm sb-btn--full" style="justify-content:flex-start"><i class="ph ph-file-text"></i> 2ª via da fatura</button>
+                  <button class="sb-btn sb-btn--cta sb-btn--sm sb-btn--full" style="justify-content:flex-start"><i class="ph ph-arrow-up-right"></i> Fazer upgrade</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+        </div>
+      </div>
+      <p class="note">As quatro telas acima são as páginas reais, renderizadas em escala — montadas exatamente com os tokens e componentes deste sistema. As imagens são placeholders listrados rotulados com o que entra em cada espaço; substitua por fotografia real (escritórios, pessoas, cidade), clara e corporativa.</p>
+    </section>
+
+    <!-- ============ VOZ ============ -->
+    <section id="voz">
+      <div class="h-sec"><h2>Voz &amp; conteúdo</h2><span class="n">16</span></div>
+      <p class="lede">Português do Brasil. Profissional, claro e tranquilizador — competente sem ser rígido. O próprio manual fala assim: <i>“Sua empresa no endereço certo.”</i></p>
+      <div class="rules">
+        <div>
+          <h3 class="sub" style="margin-top:0">Faça</h3>
+          <ul class="do">
+            <li><i class="ph ph-check-circle"></i> O nome da marca se escreve <b>Suitebras</b> — S maiúsculo, resto minúsculo.</li>
+            <li><i class="ph ph-check-circle"></i> Trate o cliente por <b>você</b>; a empresa é “a Suitebras”.</li>
+            <li><i class="ph ph-check-circle"></i> Sentence case em títulos e botões: “Comece agora”.</li>
+            <li><i class="ph ph-check-circle"></i> Comece pelo benefício: “Um endereço comercial de verdade, sem alugar uma sala”.</li>
+            <li><i class="ph ph-check-circle"></i> CTAs com verbo: “Contratar plano”, “Falar com vendas”.</li>
+            <li><i class="ph ph-check-circle"></i> Formato brasileiro: <b>R$ 149/mês</b>, <b>12 mar 2026</b>, <b>24/7</b>.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="sub" style="margin-top:0">Evite</h3>
+          <ul class="dont">
+            <li><i class="ph ph-x-circle"></i> Escrever <b>SuiteBras</b>, <b>SUITEBRAS</b> ou <b>suitebras</b> em texto corrido.</li>
+            <li><i class="ph ph-x-circle"></i> Title Case (“Comece Agora”) — exceto os elementos em caixa-alta do Sera.</li>
+            <li><i class="ph ph-x-circle"></i> Emoji na interface — a marca não é casual-lúdica.</li>
+            <li><i class="ph ph-x-circle"></i> Juridiquês e frases longas; prefira períodos curtos.</li>
+            <li><i class="ph ph-x-circle"></i> Promessas vagas sem número ou prazo.</li>
+            <li><i class="ph ph-x-circle"></i> Mais de um botão Blue Dark por tela.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ HANDOFF ============ -->
+    <section id="handoff">
+      <div class="h-sec"><h2>Handoff dev</h2><span class="n">17</span></div>
+      <p class="lede">Todo site novo começa pelo preset da empresa; depois os tokens da marca substituem o tema padrão do shadcn.</p>
+      <pre><span class="c"># 1 · inicializar com o preset oficial da Suitebras</span>
+npx shadcn@latest init <span class="p">--preset</span> <span class="s">b3ax5kgCLA</span> <span class="p">--template</span> <span class="s">next</span>
+
+<span class="c"># 2 · substituir o :root gerado pelo globals.css deste design system</span>
+<span class="c">#    (aplica Blue Logo / Blue Dark e a família de charts azul)</span>
+
+<span class="c"># 3 · fontes via next/font/google</span>
+<span class="c">#    Public_Sans → --font-public-sans   |   Geist → --font-geist</span>
+
+<span class="c"># 4 · ícones</span>
+npm i <span class="s">@phosphor-icons/react</span></pre>
+      <p class="note">O preset resolve style, neutros, tipografia, raio e ícones. Este design system resolve <b>a marca</b>: cor, proporção 80/10/10, logo, voz e os padrões de componente das telas acima. Regras completas para devs e agentes de código em <code class="inline">DESIGN.md</code>.</p>
+
+      <h3 class="sub">Arquivos</h3>
+      <div class="rules">
+        <div><ul class="do">
+          <li><i class="ph ph-file-css"></i> <b>globals.css</b> — drop-in para shadcn/ui + Tailwind v4</li>
+          <li><i class="ph ph-file-css"></i> <b>styles.css</b> — entrada para protótipos HTML</li>
+          <li><i class="ph ph-folder"></i> <b>tokens/</b> — cor, tipografia, espaçamento, sombra, base</li>
+        </ul></div>
+        <div><ul class="do">
+          <li><i class="ph ph-folder"></i> <b>components/</b> — 25 componentes React + CSS + docs</li>
+          <li><i class="ph ph-folder"></i> <b>assets/logos/</b> — logo e monograma em SVG</li>
+          <li><i class="ph ph-file-text"></i> <b>DESIGN.md</b> — regras para código e agentes</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <!-- ============ CÓDIGO ============ -->
+    <section id="codigo">
+      <div class="h-sec"><h2>Código-fonte</h2><span class="n">18</span></div>
+      <p class="lede">Tudo o que um desenvolvedor — ou um agente de IA — precisa para construir um site Suitebras a partir deste arquivo, sem depender de nenhuma outra pasta.</p>
+
+      <div class="code-block">
+        <div class="code-head">
+          <div><b>Brief para IA</b><span>cole isto no início da conversa com um agente de código</span></div>
+          <button class="copy" data-target="c-brief"><i class="ph ph-copy"></i> Copiar</button>
+        </div>
+        <pre id="c-brief">Você vai construir um site para a Suitebras seguindo o design system abaixo.
+
+MARCA
+- Nome escrito sempre "Suitebras" (S maiúsculo, resto minúsculo). Nunca SuiteBras.
+- Tagline: "Sua empresa no endereço certo."
+- Negócio: endereço fiscal e comercial (escritório virtual) para empresas no Brasil.
+- Idioma: português do Brasil. Modo claro apenas.
+
+STACK
+- npx shadcn@latest init --preset b3ax5kgCLA --template next
+- Preset: style sera, baseColor zinc, font Public Sans, fontHeading Geist, icons Phosphor.
+- Substituir o :root gerado pelo globals.css deste artefato.
+- Fontes: next/font/google → Public_Sans, Geist, Geist_Mono.
+- Ícones: @phosphor-icons/react, peso regular.
+
+COR (regra 80/10/10 do manual)
+- ~80% branco e zinc-50/100 · ~10% Blue Logo #0069C1 · ~10% Blue Dark #003869.
+- Blue Dark só no CTA principal — um por tela.
+- Secundárias: #E3EDFA, #8EB6DE, #4584BD, #336087.
+- Neutros sempre da rampa zinc. Nunca inventar cinzas.
+- Gradientes oficiais: #0069C1→#003869 e #80B4E0→#4D7496.
+
+GEOMETRIA
+- Botões 4px de raio. Cards 8px. Todo o resto quadrado (badge, tab, input, tabela).
+- Inputs sublinhados (border-bottom), fundo transparente.
+- Superfícies separam por borda 1px zinc-200, não por sombra.
+- Sombra só em dialog, menu e toast. Avatar e dot circulares.
+
+TIPOGRAFIA
+- Títulos: Geist 600, tracking -0.02em, leading 1.1.
+- Corpo: Public Sans 400/500, 16px, leading 1.5-1.7.
+- Botões, rótulos, tabs e headers de tabela: 12px, 600, uppercase, tracking 0.08em.
+- Eyebrows: uppercase, tracking 0.18em, muted-foreground.
+- Números: Geist Mono com tabular-nums.
+
+VOZ
+- Trate por "você". Sentence case (nunca Title Case).
+- Direto, benefício primeiro, frases curtas. Sem emoji, sem juridiquês.
+- CTAs com verbo: "Contratar plano", "Ver planos", "Falar com vendas".
+- R$ 149/mês · 12 mar 2026.
+
+NÃO FAZER
+- Arredondar badges/tabs/inputs · sombra em cards · cinzas fora do zinc · Title Case ·
+  emoji · Lucide (usar Phosphor) · mais de um botão Blue Dark por tela.</pre>
+      </div>
+
+      <div class="code-block">
+        <div class="code-head">
+          <div><b>globals.css</b><span>shadcn/ui + Tailwind v4 — substitui o :root gerado pelo init</span></div>
+          <button class="copy" data-target="c-globals"><i class="ph ph-copy"></i> Copiar</button>
+        </div>
+        <pre id="c-globals">/* ============================================================
+   Suitebras — globals.css (drop-in for shadcn/ui + Tailwind v4)
+   Preset: b3ax5kgCLA · style sera · base zinc · Public Sans / Geist · Phosphor
+   Substitua o :root gerado pelo `shadcn init` por este bloco.
+   Light mode only (sem .dark) — conforme brief.
+   ============================================================ */
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&amp;:is(.dark *));
+
+:root {
+  /* Sera é quadrado; a Suitebras arredonda só botões (4px) e cards (8px) */
+  --radius: 0.25rem;      /* 4px — botões e controles */
+  --radius-card: 0.5rem;  /* 8px — cards, dialogs, menus */
+
+  /* Neutros: zinc (base color do preset) */
+  --background: #FFFFFF;
+  --foreground: #09090B;
+  --card: #FFFFFF;
+  --card-foreground: #09090B;
+  --popover: #FFFFFF;
+  --popover-foreground: #09090B;
+
+  /* Marca: Blue Logo substitui o primary do zinc */
+  --primary: #0069C1;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #F4F4F5;
+  --secondary-foreground: #18181B;
+  --muted: #F4F4F5;
+  --muted-foreground: #71717A;
+
+  /* Accent: Blue Light / Blue Dark (manual) */
+  --accent: #E3EDFA;
+  --accent-foreground: #003869;
+
+  --destructive: #D64545;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E4E4E7;
+  --input: #D4D4D8;
+  --ring: #0069C1;
+
+  /* Charts: família azul da marca (substitui indigo do preset) */
+  --chart-1: #003869;
+  --chart-2: #0069C1;
+  --chart-3: #4584BD;
+  --chart-4: #8EB6DE;
+  --chart-5: #E3EDFA;
+
+  --sidebar: #FAFAFA;
+  --sidebar-foreground: #09090B;
+  --sidebar-primary: #0069C1;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #E3EDFA;
+  --sidebar-accent-foreground: #003869;
+  --sidebar-border: #E4E4E7;
+  --sidebar-ring: #0069C1;
+
+  /* Extras de marca (fora do padrão shadcn) */
+  --brand: #0069C1;
+  --brand-dark: #003869;
+  --brand-light: #E3EDFA;
+  --brand-water: #4584BD;
+  --brand-water-light: #8EB6DE;
+  --brand-navy-light: #336087;
+  --brand-gradient: linear-gradient(135deg, #0069C1 0%, #003869 100%);
+  --brand-gradient-light: linear-gradient(135deg, #80B4E0 0%, #4D7496 100%);
+  --success: #2E9E5B;
+  --warning: #E8A33D;
+
+  /* Fontes (via next/font: Public_Sans, Geist, Geist_Mono) */
+  --font-sans: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-geist), var(--font-sans);
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+  --color-brand-water: var(--brand-water);
+  --color-brand-water-light: var(--brand-water-light);
+  --color-brand-navy-light: var(--brand-navy-light);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+  --font-mono: var(--font-mono);
+
+  --radius-sm: calc(var(--radius) - 1px);
+  --radius-md: var(--radius);
+  --radius-lg: var(--radius-card);
+  --radius-xl: var(--radius-card);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground font-sans antialiased; }
+  h1, h2, h3, h4 { @apply font-heading font-semibold tracking-tight; }
+  h5, h6 { @apply font-sans text-sm font-semibold uppercase tracking-[0.08em]; }
+}
+</pre>
+      </div>
+
+      <div class="code-block">
+        <div class="code-head">
+          <div><b>tokens.css</b><span>todos os tokens para projetos sem Tailwind (HTML, e-mail, protótipo)</span></div>
+          <button class="copy" data-target="c-tokens"><i class="ph ph-copy"></i> Copiar</button>
+        </div>
+        <pre id="c-tokens">/* Suitebras — Colors
+   Brand values: Brand Manual – Design Kit (exact hex).
+   Neutrals: shadcn "zinc" base color from preset b3ax5kgCLA.
+   Light mode only (per brief). */
+
+:root {
+  /* ============================================================
+     BRAND — PRIMARY  (Manual · "Primary Colors")
+     ~80% white/light-gray · ~10% Blue Logo · ~10% Blue Dark.
+     Blue Dark is for emphasis and CTAs only — use sparingly.
+     ============================================================ */
+  --sb-blue:        #0069C1;  /* "Blue Logo" */
+  --sb-blue-dark:   #003869;  /* "Blue Dark" */
+
+  /* ============================================================
+     BRAND — SECONDARY  (Manual · "Secondary Colors")
+     ============================================================ */
+  --sb-blue-light:        #E3EDFA;
+  --sb-blue-water-light:  #8EB6DE;
+  --sb-blue-water:        #4584BD;
+  --sb-blue-navy-light:   #336087;
+
+  /* ============================================================
+     BRAND — NEUTRALS  (Manual · "Neutral Colors")
+     ============================================================ */
+  --sb-white:      #FFFFFF;
+  --sb-off-white:  #FAFBF9;
+  --sb-gray:       #F5F5F5;
+  --sb-black:      #000000;
+
+  /* ============================================================
+     ZINC RAMP  (preset baseColor: zinc — Tailwind v4 values)
+     Used for every UI neutral: text, borders, muted surfaces.
+     ============================================================ */
+  --zinc-50:  #FAFAFA;
+  --zinc-100: #F4F4F5;
+  --zinc-200: #E4E4E7;
+  --zinc-300: #D4D4D8;
+  --zinc-400: #A1A1AA;
+  --zinc-500: #71717A;
+  --zinc-600: #52525B;
+  --zinc-700: #3F3F46;
+  --zinc-800: #27272A;
+  --zinc-900: #18181B;
+  --zinc-950: #09090B;
+
+  /* legacy aliases kept for existing markup */
+  --sb-gray-50:  var(--zinc-50);
+  --sb-gray-100: var(--zinc-100);
+  --sb-gray-200: var(--zinc-200);
+  --sb-gray-300: var(--zinc-300);
+  --sb-gray-400: var(--zinc-400);
+  --sb-gray-500: var(--zinc-500);
+  --sb-gray-600: var(--zinc-600);
+  --sb-gray-700: var(--zinc-700);
+  --sb-gray-800: var(--zinc-800);
+  --sb-gray-900: var(--zinc-900);
+
+  /* ============================================================
+     GRADIENTS  (Manual · "Gradient Color Guide")
+     ============================================================ */
+  --sb-gradient-dark:  linear-gradient(135deg, #0069C1 0%, #003869 100%);
+  --sb-gradient-light: linear-gradient(135deg, #80B4E0 0%, #4D7496 100%);
+
+  /* ============================================================
+     SEMANTIC STATES  (ADDED — not in the manual)
+     ============================================================ */
+  --sb-success: #2E9E5B;
+  --sb-warning: #E8A33D;
+  --sb-danger:  #D64545;
+  --sb-info:    var(--sb-blue);
+
+  /* ============================================================
+     SHADCN SEMANTIC TOKENS — light (zinc base + brand overlay)
+     Identical names to shadcn/ui globals.css. Copy the block.
+     ============================================================ */
+  --background:             #FFFFFF;
+  --foreground:             var(--zinc-950);
+  --card:                   #FFFFFF;
+  --card-foreground:        var(--zinc-950);
+  --popover:                #FFFFFF;
+  --popover-foreground:     var(--zinc-950);
+  --primary:                var(--sb-blue);
+  --primary-foreground:     #FFFFFF;
+  --secondary:              var(--zinc-100);
+  --secondary-foreground:   var(--zinc-900);
+  --muted:                  var(--zinc-100);
+  --muted-foreground:       var(--zinc-500);
+  --accent:                 var(--sb-blue-light);
+  --accent-foreground:      var(--sb-blue-dark);
+  --destructive:            var(--sb-danger);
+  --destructive-foreground: #FFFFFF;
+  --border:                 var(--zinc-200);
+  --input:                  var(--zinc-300);
+  --ring:                   var(--sb-blue);
+
+  --sidebar:                    var(--zinc-50);
+  --sidebar-foreground:         var(--zinc-950);
+  --sidebar-primary:            var(--sb-blue);
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent:             var(--sb-blue-light);
+  --sidebar-accent-foreground:  var(--sb-blue-dark);
+  --sidebar-border:             var(--zinc-200);
+  --sidebar-ring:               var(--sb-blue);
+
+  /* Brand aliases for CTAs */
+  --brand:      var(--sb-blue);
+  --brand-dark: var(--sb-blue-dark);
+
+  /* Charts — brand blue family replaces the preset's indigo */
+  --chart-1: #003869;
+  --chart-2: #0069C1;
+  --chart-3: #4584BD;
+  --chart-4: #8EB6DE;
+  --chart-5: #E3EDFA;
+}
+
+
+/* Suitebras — Typography
+   Locked to the company shadcn preset b3ax5kgCLA (style: sera):
+     · font          → Public Sans   (body / UI)
+     · fontHeading   → Geist         (headings / display)
+   Sera is a typography-first, editorial style: uppercase tracked
+   eyebrows and labels, tight display headings, generous leading. */
+
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Geist:wght@400;500;600;700;800&amp;family=Geist+Mono:wght@400;500&amp;display=swap');
+
+:root {
+  /* ---- Families ---- */
+  --font-sans:    'Public Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-heading: 'Geist', var(--font-sans);
+  --font-display: var(--font-heading);
+  --font-mono:    'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  /* ---- Type scale (rem) ---- */
+  --text-xs:   0.75rem;   /* 12 */
+  --text-sm:   0.875rem;  /* 14 */
+  --text-base: 1rem;      /* 16 */
+  --text-lg:   1.125rem;  /* 18 */
+  --text-xl:   1.25rem;   /* 20 */
+  --text-2xl:  1.5rem;    /* 24 */
+  --text-3xl:  1.875rem;  /* 30 */
+  --text-4xl:  2.25rem;   /* 36 */
+  --text-5xl:  3rem;      /* 48 */
+  --text-6xl:  3.75rem;   /* 60 */
+  --text-7xl:  4.5rem;    /* 72 */
+
+  /* ---- Line heights ---- */
+  --leading-none:    1;
+  --leading-tight:   1.1;
+  --leading-snug:    1.3;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+
+  /* ---- Weights ---- */
+  --font-normal:    400;
+  --font-medium:    500;
+  --font-semibold:  600;
+  --font-bold:      700;
+  --font-extrabold: 800;
+
+  /* ---- Letter spacing ---- */
+  --tracking-tighter: -0.03em;
+  --tracking-tight:   -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-caps:    0.08em;   /* Sera: uppercase buttons / labels */
+  --tracking-eyebrow: 0.18em;   /* Sera: uppercase eyebrows */
+}
+
+
+/* Suitebras — Spacing, radius &amp; layout
+   4px base grid. RADIUS IS ZERO: the Sera style (preset b3ax5kgCLA)
+   forces square corners on every component. Keep the scale so code
+   that references --radius-* still resolves — all to 0. */
+
+:root {
+  /* ---- Spacing (4px grid) ---- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /*  4 */
+  --space-2:  0.5rem;   /*  8 */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.25rem;  /* 20 */
+  --space-6:  1.5rem;   /* 24 */
+  --space-8:  2rem;     /* 32 */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+  --space-24: 6rem;     /* 96 */
+  --space-32: 8rem;     /* 128 */
+
+  /* ---- Radius ----
+     Sera ships square, but Suitebras softens the two interactive
+     surfaces: buttons 4px, cards 8px. Everything else stays square. */
+  --radius-btn:  4px;   /* buttons, icon buttons, small controls */
+  --radius-card: 8px;   /* cards, dialogs, menus, toasts, panels */
+  --radius:      var(--radius-btn);
+  --radius-sm:   var(--radius-btn);
+  --radius-md:   var(--radius-btn);
+  --radius-lg:   var(--radius-card);
+  --radius-xl:   var(--radius-card);
+  --radius-2xl:  var(--radius-card);
+  --radius-full: 9999px;   /* avatars / dots */
+
+  /* ---- Borders ---- */
+  --border-width: 1px;
+
+  /* ---- Layout ---- */
+  --container:    1200px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+
+  /* ---- Z-index ---- */
+  --z-base:     0;
+  --z-dropdown: 1000;
+  --z-sticky:   1100;
+  --z-overlay:  1200;
+  --z-modal:    1300;
+  --z-toast:    1400;
+}
+
+
+/* Suitebras — Elevation &amp; focus
+   Sera is print-like: surfaces separate with hairline borders, not
+   shadows. Shadows exist only for floating layers (menus, dialogs,
+   toasts). Tinted with Blue Dark so they read as brand shade. */
+
+:root {
+  --shadow-none: none;
+  --shadow-xs: 0 1px 0 rgba(0, 56, 105, 0.06);
+  --shadow-sm: 0 1px 2px rgba(0, 56, 105, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 56, 105, 0.10);
+  --shadow-lg: 0 12px 28px rgba(0, 56, 105, 0.12);
+  --shadow-xl: 0 24px 48px rgba(0, 56, 105, 0.14);
+
+  /* Focus — Sera uses a 2px offset outline instead of a soft glow */
+  --ring-focus: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--ring);
+}
+
+
+/* Suitebras — Base element defaults (Sera) */
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-tight);
+  color: var(--foreground);
+  margin: 0;
+  text-wrap: balance;
+}
+/* Sera: small headings (h5/h6) are uppercase + tracked */
+h5, h6 { font-size: var(--text-sm); text-transform: uppercase; letter-spacing: var(--tracking-caps); font-weight: var(--font-semibold); }
+
+p { margin: 0; text-wrap: pretty; }
+
+a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; transition: color .15s ease; }
+a:hover { color: var(--brand-dark); }
+
+code, kbd, pre, samp { font-family: var(--font-mono); font-size: .92em; }
+
+/* Eyebrow — the Sera uppercase tracked kicker */
+.sb-eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--text-xs);
+  font-weight: var(--font-semibold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+::selection { background: var(--sb-blue-light); color: var(--sb-blue-dark); }
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: var(--space-6) 0; }
+</pre>
+      </div>
+
+      <div class="code-block">
+        <div class="code-head">
+          <div><b>components.css</b><span>estilo Sera de todos os 25 componentes</span></div>
+          <button class="copy" data-target="c-components"><i class="ph ph-copy"></i> Copiar</button>
+        </div>
+        <pre id="c-components">/* Suitebras — Component styles · style: SERA (preset b3ax5kgCLA)
+   Editorial geometry: square corners, hairline borders, underline
+   inputs, uppercase tracked labels. Icons: Phosphor (.ph). */
+
+/* ============================ BUTTON ============================ */
+.sb-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  font-family: var(--font-sans); font-weight: var(--font-semibold);
+  font-size: var(--text-xs); letter-spacing: var(--tracking-caps); text-transform: uppercase;
+  border-radius: var(--radius-btn); border: 1px solid transparent; cursor: pointer; white-space: nowrap;
+  text-decoration: none; line-height: 1; user-select: none;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.sb-btn:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+.sb-btn:disabled, .sb-btn[aria-disabled="true"] { opacity: .5; cursor: not-allowed; pointer-events: none; }
+.sb-btn--sm { height: 32px; padding: 0 12px; }
+.sb-btn--md { height: 40px; padding: 0 18px; }
+.sb-btn--lg { height: 48px; padding: 0 26px; font-size: var(--text-sm); }
+.sb-btn--full { width: 100%; }
+.sb-btn--primary { background: var(--sb-blue); color: #fff; border-color: var(--sb-blue); }
+.sb-btn--primary:hover { background: #0059A6; border-color: #0059A6; }
+.sb-btn--cta { background: var(--sb-blue-dark); color: #fff; border-color: var(--sb-blue-dark); }
+.sb-btn--cta:hover { background: #002B50; border-color: #002B50; }
+.sb-btn--secondary { background: var(--zinc-100); color: var(--foreground); border-color: var(--zinc-100); }
+.sb-btn--secondary:hover { background: var(--zinc-200); border-color: var(--zinc-200); }
+.sb-btn--outline { background: transparent; border-color: var(--foreground); color: var(--foreground); }
+.sb-btn--outline:hover { background: var(--foreground); color: #fff; }
+.sb-btn--ghost { background: transparent; color: var(--foreground); }
+.sb-btn--ghost:hover { background: var(--zinc-100); }
+.sb-btn--link { background: transparent; color: var(--sb-blue); height: auto; padding: 0 0 2px; border: 0; border-bottom: 1px solid currentColor; }
+.sb-btn--link:hover { color: var(--sb-blue-dark); }
+.sb-btn--destructive { background: var(--sb-danger); color: #fff; border-color: var(--sb-danger); }
+.sb-btn--destructive:hover { filter: brightness(.92); }
+.sb-btn--icon { padding: 0; }
+.sb-btn--icon.sb-btn--sm { width: 32px; }
+.sb-btn--icon.sb-btn--md { width: 40px; }
+.sb-btn--icon.sb-btn--lg { width: 48px; }
+.sb-btn .ph, .sb-btn svg { font-size: 1.35em; width: 1.35em; height: 1.35em; line-height: 1; }
+.sb-btn__spinner { width: 1em; height: 1em; border-radius: 50%; border: 2px solid currentColor; border-right-color: transparent; animation: sb-spin .6s linear infinite; }
+@keyframes sb-spin { to { transform: rotate(360deg); } }
+
+/* ============================ FIELD / LABEL ============================ */
+.sb-field { display: flex; flex-direction: column; gap: 6px; }
+.sb-label { font-size: var(--text-xs); font-weight: var(--font-semibold); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--foreground); }
+.sb-label__req { color: var(--sb-danger); margin-left: 2px; }
+.sb-help { font-size: var(--text-xs); color: var(--muted-foreground); }
+.sb-help--error { color: var(--sb-danger); }
+
+/* ============================ INPUT / TEXTAREA  (Sera: underline) ============================ */
+.sb-input, .sb-textarea {
+  width: 100%; font-family: var(--font-sans); font-size: var(--text-base);
+  color: var(--foreground); background: transparent;
+  border: 0; border-bottom: 1px solid var(--input); border-radius: 0;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.sb-input { height: 40px; padding: 0 2px; }
+.sb-input--sm { height: 32px; font-size: var(--text-sm); }
+.sb-input--lg { height: 48px; font-size: var(--text-lg); }
+.sb-textarea { padding: 8px 2px; min-height: 88px; line-height: 1.5; resize: vertical; }
+.sb-input::placeholder, .sb-textarea::placeholder { color: var(--zinc-400); }
+.sb-input:hover, .sb-textarea:hover { border-color: var(--zinc-500); }
+.sb-input:focus, .sb-textarea:focus { outline: none; border-color: var(--sb-blue); box-shadow: 0 1px 0 0 var(--sb-blue); }
+.sb-input:disabled, .sb-textarea:disabled { color: var(--muted-foreground); border-style: dashed; cursor: not-allowed; }
+.sb-input--invalid, .sb-textarea--invalid { border-color: var(--sb-danger); }
+.sb-input--invalid:focus, .sb-textarea--invalid:focus { box-shadow: 0 1px 0 0 var(--sb-danger); }
+/* boxed variant for dense app UIs (search, filters) */
+.sb-input--boxed { border: 1px solid var(--input); border-radius: var(--radius-btn); padding: 0 12px; font-size: var(--text-sm); background: #fff; }
+.sb-input--boxed:focus { box-shadow: none; }
+
+/* ============================ SELECT ============================ */
+.sb-select-wrap { position: relative; display: inline-flex; width: 100%; }
+.sb-select {
+  appearance: none; -webkit-appearance: none; width: 100%; height: 40px;
+  padding: 0 28px 0 2px; font-family: var(--font-sans); font-size: var(--text-base);
+  color: var(--foreground); background: transparent; border: 0; border-bottom: 1px solid var(--input);
+  border-radius: 0; cursor: pointer; transition: border-color .15s ease;
+}
+.sb-select:hover { border-color: var(--zinc-500); }
+.sb-select:focus { outline: none; border-color: var(--sb-blue); box-shadow: 0 1px 0 0 var(--sb-blue); }
+.sb-select:disabled { color: var(--muted-foreground); border-style: dashed; cursor: not-allowed; }
+.sb-select-wrap::after { content: ""; position: absolute; right: 8px; top: 50%; width: 7px; height: 7px; border: solid var(--zinc-600); border-width: 0 1.5px 1.5px 0; transform: translateY(-70%) rotate(45deg); pointer-events: none; }
+
+/* ============================ CHECKBOX / RADIO ============================ */
+.sb-checkbox, .sb-radio { appearance: none; -webkit-appearance: none; width: 18px; height: 18px; border: 1.5px solid var(--zinc-400); background: #fff; cursor: pointer; position: relative; flex-shrink: 0; transition: background .15s ease, border-color .15s ease; margin: 0; }
+.sb-checkbox { border-radius: 0; }
+.sb-radio { border-radius: 50%; }
+.sb-checkbox:hover, .sb-radio:hover { border-color: var(--sb-blue); }
+.sb-checkbox:focus-visible, .sb-radio:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+.sb-checkbox:checked, .sb-radio:checked { background: var(--foreground); border-color: var(--foreground); }
+.sb-checkbox:checked::after { content: ""; position: absolute; left: 5px; top: 1.5px; width: 4px; height: 8px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.sb-radio::after { content: ""; position: absolute; inset: 3.5px; border-radius: 50%; background: #fff; transform: scale(0); transition: transform .15s ease; }
+.sb-radio:checked::after { transform: scale(1); }
+.sb-checkbox:disabled, .sb-radio:disabled { opacity: .5; cursor: not-allowed; }
+.sb-choice { display: inline-flex; align-items: center; gap: 10px; font-size: var(--text-sm); color: var(--foreground); cursor: pointer; line-height: 1.3; }
+
+/* ============================ SWITCH ============================ */
+.sb-switch { display: inline-flex; align-items: center; gap: 10px; cursor: pointer; font-size: var(--text-sm); color: var(--foreground); position: relative; }
+.sb-switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+.sb-switch__track { width: 40px; height: 22px; background: var(--zinc-300); transition: background .18s ease; position: relative; flex-shrink: 0; }
+.sb-switch__thumb { position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; background: #fff; transition: transform .18s ease; }
+.sb-switch input:checked + .sb-switch__track { background: var(--foreground); }
+.sb-switch input:checked + .sb-switch__track .sb-switch__thumb { transform: translateX(18px); }
+.sb-switch input:focus-visible + .sb-switch__track { outline: 2px solid var(--ring); outline-offset: 2px; }
+.sb-switch input:disabled + .sb-switch__track { opacity: .5; }
+
+/* ============================ CARD ============================ */
+.sb-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-card); box-shadow: none; overflow: hidden; }
+.sb-card__header { padding: 20px 20px 0; }
+.sb-card__title { font-family: var(--font-heading); font-size: var(--text-lg); font-weight: var(--font-semibold); color: var(--foreground); letter-spacing: var(--tracking-tight); }
+.sb-card__desc { font-size: var(--text-sm); color: var(--muted-foreground); margin-top: 4px; }
+.sb-card__body { padding: 20px; }
+.sb-card__footer { padding: 0 20px 20px; display: flex; gap: 10px; align-items: center; }
+.sb-card--interactive { transition: border-color .15s ease, background .15s ease; cursor: pointer; }
+.sb-card--interactive:hover { border-color: var(--foreground); }
+.sb-card--flush &gt; .sb-card__body { padding: 0; }
+
+/* ============================ BADGE ============================ */
+.sb-badge { display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 8px; border-radius: 0; font-size: 11px; font-weight: var(--font-semibold); letter-spacing: var(--tracking-caps); text-transform: uppercase; border: 1px solid transparent; white-space: nowrap; }
+.sb-badge .ph, .sb-badge svg { font-size: 13px; width: 13px; height: 13px; }
+.sb-badge--primary { background: var(--sb-blue-light); color: var(--sb-blue-dark); }
+.sb-badge--solid { background: var(--foreground); color: #fff; }
+.sb-badge--brand { background: var(--sb-blue); color: #fff; }
+.sb-badge--secondary { background: var(--zinc-100); color: var(--zinc-700); }
+.sb-badge--outline { background: transparent; border-color: var(--foreground); color: var(--foreground); }
+.sb-badge--success { background: #E7F4EC; color: #1E7D42; }
+.sb-badge--warning { background: #FBF0DC; color: #9A6512; }
+.sb-badge--danger { background: #FBE9E9; color: #A32B2B; }
+
+/* ============================ AVATAR ============================ */
+.sb-avatar { display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; overflow: hidden; background: var(--zinc-100); color: var(--foreground); font-family: var(--font-sans); font-weight: var(--font-semibold); flex-shrink: 0; letter-spacing: .02em; }
+.sb-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.sb-avatar--sm { width: 30px; height: 30px; font-size: 11px; }
+.sb-avatar--md { width: 40px; height: 40px; font-size: 14px; }
+.sb-avatar--lg { width: 52px; height: 52px; font-size: 18px; }
+.sb-avatar--brand { background: var(--sb-blue); color: #fff; }
+
+/* ============================ SEPARATOR ============================ */
+.sb-separator { border: 0; background: var(--border); }
+.sb-separator--h { height: 1px; width: 100%; margin: 0; }
+.sb-separator--v { width: 1px; align-self: stretch; }
+
+/* ============================ TABS  (Sera: underline) ============================ */
+.sb-tabs__list { display: flex; gap: 28px; border-bottom: 1px solid var(--border); }
+.sb-tab { border: 0; background: transparent; padding: 10px 0 12px; margin-bottom: -1px; border-bottom: 2px solid transparent; font-family: var(--font-sans); font-weight: var(--font-semibold); font-size: var(--text-xs); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--muted-foreground); cursor: pointer; transition: color .15s ease, border-color .15s ease; }
+.sb-tab:hover { color: var(--foreground); }
+.sb-tab[aria-selected="true"] { color: var(--foreground); border-bottom-color: var(--foreground); }
+.sb-tab:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; }
+
+/* ============================ BREADCRUMB ============================ */
+.sb-breadcrumb { display: flex; align-items: center; gap: 8px; font-size: var(--text-xs); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--muted-foreground); list-style: none; padding: 0; margin: 0; }
+.sb-breadcrumb a { color: var(--muted-foreground); text-decoration: none; }
+.sb-breadcrumb a:hover { color: var(--foreground); }
+.sb-breadcrumb__sep { color: var(--zinc-300); }
+.sb-breadcrumb [aria-current] { color: var(--foreground); font-weight: var(--font-semibold); }
+
+/* ============================ PAGINATION ============================ */
+.sb-pagination { display: flex; align-items: center; gap: 4px; list-style: none; padding: 0; margin: 0; }
+.sb-page { min-width: 36px; height: 36px; padding: 0 10px; border-radius: var(--radius-btn); display: inline-flex; align-items: center; justify-content: center; font-size: var(--text-sm); font-weight: var(--font-medium); color: var(--foreground); background: transparent; border: 1px solid transparent; cursor: pointer; text-decoration: none; }
+.sb-page:hover { border-color: var(--border); }
+.sb-page[aria-current="page"] { background: var(--foreground); color: #fff; border-color: var(--foreground); }
+.sb-page:disabled { opacity: .4; cursor: not-allowed; }
+.sb-page .ph { font-size: 16px; }
+
+/* ============================ ALERT ============================ */
+.sb-alert { display: flex; gap: 12px; padding: 14px 16px; border: 1px solid; border-left-width: 3px; border-radius: var(--radius-card); font-size: var(--text-sm); background: #fff; }
+.sb-alert__icon { flex-shrink: 0; margin-top: 1px; font-size: 18px; line-height: 1; }
+.sb-alert__icon svg { width: 18px; height: 18px; display: block; }
+.sb-alert__title { font-weight: var(--font-semibold); margin-bottom: 2px; letter-spacing: var(--tracking-caps); text-transform: uppercase; font-size: var(--text-xs); }
+.sb-alert__body { line-height: 1.45; color: var(--foreground); }
+.sb-alert--info { border-color: var(--border); border-left-color: var(--sb-blue); color: var(--sb-blue); }
+.sb-alert--success { border-color: var(--border); border-left-color: var(--sb-success); color: #1E7D42; }
+.sb-alert--warning { border-color: var(--border); border-left-color: var(--sb-warning); color: #9A6512; }
+.sb-alert--danger { border-color: var(--border); border-left-color: var(--sb-danger); color: #A32B2B; }
+
+/* ============================ TOOLTIP ============================ */
+.sb-tooltip { position: relative; display: inline-flex; }
+.sb-tooltip__pop { position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%) translateY(4px); background: var(--foreground); color: #fff; padding: 6px 10px; border-radius: var(--radius-btn); font-size: var(--text-xs); font-weight: var(--font-medium); white-space: nowrap; opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .15s ease, transform .15s ease; z-index: var(--z-overlay); }
+.sb-tooltip:hover .sb-tooltip__pop, .sb-tooltip:focus-within .sb-tooltip__pop { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+
+/* ============================ TABLE ============================ */
+.sb-table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); }
+.sb-table th { text-align: left; font-size: 11px; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--muted-foreground); font-weight: var(--font-semibold); padding: 10px 12px; border-bottom: 1px solid var(--foreground); }
+.sb-table td { padding: 14px 12px; border-bottom: 1px solid var(--border); vertical-align: middle; color: var(--foreground); }
+.sb-table tbody tr:hover td { background: var(--zinc-50); }
+.sb-table tr:last-child td { border-bottom: 0; }
+.sb-table__sub { color: var(--muted-foreground); font-size: var(--text-xs); margin-top: 2px; }
+.sb-table__num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; text-align: right; }
+.sb-table th.sb-table__num { text-align: right; }
+
+/* ============================ DIALOG ============================ */
+.sb-dialog__overlay { position: fixed; inset: 0; background: rgba(9, 9, 11, .55); display: flex; align-items: center; justify-content: center; padding: 24px; z-index: var(--z-modal); }
+.sb-dialog { width: 100%; max-width: 480px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-card); box-shadow: var(--shadow-xl); }
+.sb-dialog__header { padding: 24px 24px 0; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.sb-dialog__title { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: var(--font-semibold); letter-spacing: var(--tracking-tight); }
+.sb-dialog__desc { font-size: var(--text-sm); color: var(--muted-foreground); margin-top: 6px; line-height: 1.5; }
+.sb-dialog__body { padding: 20px 24px; }
+.sb-dialog__footer { padding: 0 24px 24px; display: flex; justify-content: flex-end; gap: 10px; }
+.sb-dialog__close { border: 0; background: transparent; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; cursor: pointer; color: var(--muted-foreground); font-size: 18px; margin: -6px -8px 0 0; }
+.sb-dialog__close:hover { color: var(--foreground); background: var(--zinc-100); }
+
+/* ============================ DROPDOWN MENU ============================ */
+.sb-menu { min-width: 200px; background: #fff; border: 1px solid var(--border); border-radius: var(--radius-card); box-shadow: var(--shadow-md); padding: 4px; z-index: var(--z-dropdown); }
+.sb-menu__label { padding: 8px 10px 4px; font-size: 10px; letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--muted-foreground); font-weight: var(--font-semibold); }
+.sb-menu__item { display: flex; align-items: center; gap: 10px; width: 100%; padding: 8px 10px; border-radius: var(--radius-btn); font-size: var(--text-sm); color: var(--foreground); background: transparent; border: 0; cursor: pointer; text-align: left; text-decoration: none; }
+.sb-menu__item .ph { font-size: 16px; color: var(--muted-foreground); }
+.sb-menu__item:hover { background: var(--zinc-100); }
+.sb-menu__item--danger { color: var(--sb-danger); }
+.sb-menu__item--danger .ph { color: var(--sb-danger); }
+.sb-menu__sep { height: 1px; background: var(--border); margin: 4px 0; }
+.sb-menu__kbd { margin-left: auto; font-family: var(--font-mono); font-size: 11px; color: var(--muted-foreground); }
+
+/* ============================ TOAST ============================ */
+.sb-toast { display: flex; gap: 12px; align-items: flex-start; width: 360px; padding: 14px 16px; background: var(--foreground); color: #fff; border-left: 3px solid var(--sb-blue); border-radius: var(--radius-card); box-shadow: var(--shadow-lg); font-size: var(--text-sm); }
+.sb-toast .ph { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.sb-toast__title { font-weight: var(--font-semibold); }
+.sb-toast__desc { color: rgba(255,255,255,.72); margin-top: 2px; font-size: var(--text-xs); }
+.sb-toast__action { margin-left: auto; background: transparent; border: 0; color: #fff; font-size: 11px; letter-spacing: var(--tracking-caps); text-transform: uppercase; font-weight: var(--font-semibold); cursor: pointer; border-bottom: 1px solid rgba(255,255,255,.5); padding: 0 0 2px; align-self: center; white-space: nowrap; }
+.sb-toast--success { border-left-color: var(--sb-success); }
+.sb-toast--danger { border-left-color: var(--sb-danger); }
+.sb-toast--light { background: #fff; color: var(--foreground); border: 1px solid var(--border); border-left: 3px solid var(--sb-blue); }
+.sb-toast--light .sb-toast__desc { color: var(--muted-foreground); }
+.sb-toast--light .sb-toast__action { color: var(--foreground); border-bottom-color: var(--foreground); }
+
+/* ============================ PROGRESS ============================ */
+.sb-progress { width: 100%; height: 4px; background: var(--zinc-200); border-radius: var(--radius-full); overflow: hidden; }
+.sb-progress__bar { height: 100%; background: var(--sb-blue); transition: width .3s ease; }
+.sb-progress--lg { height: 8px; }
+.sb-progress-row { display: flex; justify-content: space-between; font-size: var(--text-xs); letter-spacing: var(--tracking-caps); text-transform: uppercase; color: var(--muted-foreground); margin-bottom: 8px; font-weight: var(--font-semibold); }
+.sb-progress-row b { color: var(--foreground); font-family: var(--font-mono); letter-spacing: 0; }
+
+/* ============================ SKELETON ============================ */
+.sb-skeleton { background: linear-gradient(90deg, var(--zinc-100) 25%, var(--zinc-200) 50%, var(--zinc-100) 75%); background-size: 200% 100%; animation: sb-shimmer 1.4s infinite; }
+@keyframes sb-shimmer { to { background-position: -200% 0; } }
+.sb-skeleton--text { height: 12px; width: 100%; }
+.sb-skeleton--title { height: 20px; width: 60%; }
+.sb-skeleton--circle { border-radius: 50%; }
+
+/* ============================ ACCORDION ============================ */
+.sb-accordion { border-top: 1px solid var(--border); }
+.sb-accordion__item { border-bottom: 1px solid var(--border); }
+.sb-accordion__trigger { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 18px 0; background: transparent; border: 0; cursor: pointer; text-align: left; font-family: var(--font-heading); font-size: var(--text-base); font-weight: var(--font-semibold); color: var(--foreground); }
+.sb-accordion__trigger .ph { font-size: 18px; color: var(--muted-foreground); transition: transform .2s ease; flex-shrink: 0; }
+.sb-accordion__trigger[aria-expanded="true"] .ph { transform: rotate(45deg); }
+.sb-accordion__content { padding: 0 0 18px; font-size: var(--text-sm); color: var(--muted-foreground); line-height: 1.6; max-width: 60ch; }
+.sb-accordion__content[hidden] { display: none; }
+
+/* ============================ KBD / CODE ============================ */
+.sb-kbd { display: inline-block; font-family: var(--font-mono); font-size: 11px; padding: 2px 6px; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: var(--radius-btn); background: var(--zinc-50); color: var(--foreground); }
+
+/* ============================ EMPTY STATE ============================ */
+.sb-empty { text-align: center; padding: 48px 24px; border: 1px dashed var(--zinc-300); border-radius: var(--radius-card); }
+.sb-empty .ph { font-size: 32px; color: var(--zinc-400); }
+.sb-empty__title { font-family: var(--font-heading); font-weight: var(--font-semibold); margin-top: 12px; }
+.sb-empty__desc { font-size: var(--text-sm); color: var(--muted-foreground); margin: 6px auto 18px; max-width: 36ch; }
+</pre>
+      </div>
+
+      <div class="code-block">
+        <div class="code-head">
+          <div><b>DESIGN.md</b><span>as regras em texto — commite junto do README do repositório</span></div>
+          <button class="copy" data-target="c-design"><i class="ph ph-copy"></i> Copiar</button>
+        </div>
+        <pre id="c-design"># DESIGN.md — Suitebras
+
+Regras para agentes de código e devs trabalhando em qualquer site da Suitebras.
+Fonte da verdade: este repositório (`tokens/`, `components/`, `globals.css`).
+
+## Stack
+- `npx shadcn@latest init --preset b3ax5kgCLA --template next`
+- Preset decodificado: **style sera · baseColor zinc · font Public Sans · fontHeading Geist · icons Phosphor · radius default→0 (sera) · menuAccent subtle · menuColor default**
+- **Desvio deliberado do preset:** botões 4px e cards 8px (decisão Suitebras sobre o radius 0 do Sera).
+- Depois do init, **substitua o `:root` de `globals.css`** pelo `globals.css` deste repo (aplica os azuis da marca).
+- Fontes via `next/font/google`: `Public_Sans` (`--font-public-sans`), `Geist` (`--font-geist`), `Geist_Mono` (`--font-geist-mono`).
+- Ícones: `@phosphor-icons/react`, peso `regular`. `fill` só em estado ativo. Nunca emoji.
+
+## Cores — regra 80 / 10 / 10 (manual da marca)
+- ~80% branco / zinc-50–100 · ~10% **Blue Logo `#0069C1`** (`primary`) · ~10% **Blue Dark `#003869`** (só CTA principal e ênfase).
+- Secundárias: `#E3EDFA` (accent) · `#8EB6DE` · `#4584BD` · `#336087`.
+- Neutros de UI sempre **zinc** (não inventar cinzas). Manual: `#FAFBF9`, `#F5F5F5` só como fundo de seção.
+- Gráficos: `--chart-1..5` = família azul. Estados: success `#2E9E5B`, warning `#E8A33D`, destructive `#D64545`.
+- Use tokens semânticos (`bg-primary`, `text-muted-foreground`) — nunca hex no JSX.
+
+## Geometria (Sera)
+- **Botões 4px** (`--radius-btn` / `rounded`) e **cards 8px** (`--radius-card` / `rounded-lg`). Todo o resto — badges, tabs, inputs, tabelas — permanece **quadrado**. Avatar e dots: `rounded-full`.
+- Superfícies separam por **borda 1px `border`**, não sombra. Sombra só em popover/dialog/toast.
+- Inputs: **sublinhado** (`border-b`), fundo transparente. Variante `boxed` só em busca/filtros densos.
+- Botões/labels/tabs/headers de tabela: **uppercase, `tracking-[0.08em]`, 600, 12px**.
+- Eyebrows: uppercase `tracking-[0.18em]` `text-muted-foreground`.
+
+## Tipografia
+- Títulos `h1–h4`: **Geist 600**, `tracking-tight`, leading 1.1. Displays podem ir a 60–72px.
+- Corpo: **Public Sans 400/500**, 16px, leading 1.5–1.7 em prosa.
+- `h5/h6`: 14px uppercase tracked (rótulos de seção).
+- Números/valores: **Geist Mono** com `tabular-nums`.
+
+## Voz (pt-BR)
+- **Grafia da marca: `Suitebras`** — S maiúsculo, resto minúsculo. Nunca `SuiteBras`, `SUITEBRAS` nem `suitebras` em texto corrido (o logotipo é lowercase por desenho; o texto não).
+- Trate por **você**; empresa = "a Suitebras". Sentence case (nunca Title Case) — exceto os elementos caps do Sera.
+- Direto, concreto, benefício primeiro. CTAs com verbo: "Contratar plano", "Ver planos", "Falar com vendas".
+- Moeda: `R$ 149/mês`. Datas: `12 mar 2026`.
+
+## Componentes (shadcn + este repo)
+- Prefira o shadcn instalado; este repo documenta o **visual esperado** (`components/*.card.html`) e traz wrappers React equivalentes.
+- `Button`: `primary` (ação principal) · `cta` (Blue Dark, **1 por tela**) · `outline` (preto, inverte no hover) · `ghost` · `link` (sublinhado).
+- Forms: `Label` caps + `Input` sublinhado + `sb-help`. Checkbox quadrado; checked = foreground (preto), não azul.
+- Tabs: sublinhado 2px, não pílula. Badge: quadrado, caps. Card: borda, sem sombra, sem radius.
+- Nunca `dark:` manual — sem modo escuro no escopo atual.
+
+## Não fazer
+- Arredondar badges, tabs, inputs ou tabelas (só botão 4px e card 8px) · sombras em cards · gradientes fora dos dois oficiais · cinzas fora do zinc · Title Case · emoji · Lucide (usar Phosphor) · Blue Dark em mais de um CTA por tela.
+</pre>
+      </div>
+    </section>
+  </main>
+</div>
+
+<script src="js/docs.js"></script>
+
+
+<div id="__claude_design_branding"><style>#__claude_design_branding{position:fixed;right:16px;bottom:16px;z-index:2147483646;display:flex;align-items:center;gap:7px;height:30px;padding:0 5px 0 10px;border-radius:999px;font-family:"Anthropic Sans",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;font-size:12.5px;font-weight:400;line-height:1;letter-spacing:normal;text-transform:none;color:#141413;background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);box-shadow:0 0 0 .5px rgba(31,30,29,.14),0 2px 10px rgba(0,0,0,.09)}
+#__claude_design_branding *{box-sizing:border-box;margin:0}
+#__claude_design_branding a{color:inherit;text-decoration:none;display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+#__claude_design_branding a:hover span{text-decoration:underline}
+#__claude_design_branding svg{flex:none}
+#__claude_design_branding a svg{color:#D97757}
+#__claude_design_branding button{width:20px;height:20px;padding:0;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:currentColor;opacity:.55;border:0;background:none;cursor:pointer;flex:none;font:inherit;transition:opacity .14s}
+#__claude_design_branding button:hover{opacity:1;background:rgba(127,127,127,.22)}
+@media print{#__claude_design_branding{display:none}}</style><a href="https://claude.com/product/design" target="_blank" rel="noopener noreferrer"><svg width="14" height="14" viewBox="0 0 20 21" fill="none" aria-hidden="true"><path fill="currentColor" d="M9.99902 0C15.5258 0.000170936 19.999 4.50643 19.999 10.0547C19.999 11.7656 19.5863 12.9976 18.7861 13.8203C17.9924 14.6362 16.9465 14.9138 15.9854 15.0078C15.05 15.0993 14.0097 15.0262 13.2549 15.0186C12.8524 15.0145 12.5177 15.0267 12.2441 15.0703C11.9682 15.1144 11.8143 15.1813 11.7305 15.2432C11.4745 15.4322 11.3353 15.7121 11.2656 16.1602C11.2303 16.3875 11.2168 16.6362 11.209 16.9131C11.2017 17.1715 11.1986 17.4893 11.1807 17.7705C11.1469 18.2975 11.0495 19.0865 10.4199 19.5908C9.7846 20.0996 8.88652 20.1057 7.85449 19.877C7.36399 19.7682 6.88652 19.6232 6.42578 19.4453C2.66989 17.9949 0.000187748 14.3414 0 10.0547C0 4.50643 4.47223 0.000171048 9.99902 0ZM9.99902 1.60547C5.36781 1.60564 1.60547 5.38391 1.60547 10.0547C1.60566 13.6582 3.84823 16.7296 7.00391 17.9482C7.39027 18.0974 7.79085 18.2184 8.20215 18.3096C9.1375 18.5169 9.384 18.3633 9.41602 18.3379C9.4524 18.3087 9.54558 18.1915 9.5791 17.668C9.5947 17.4239 9.59473 17.1786 9.60352 16.8672C9.61179 16.5742 9.62831 16.2435 9.67969 15.9131C9.78359 15.2455 10.0474 14.4906 10.7764 13.9521C11.1479 13.6778 11.5842 13.5493 11.9912 13.4844C12.4007 13.4191 12.8434 13.4088 13.2705 13.4131C14.1753 13.4222 15.0071 13.4905 15.8291 13.4102C16.6257 13.3322 17.2249 13.1235 17.6357 12.7012C18.0401 12.2855 18.3935 11.5261 18.3936 10.0547C18.3936 5.38391 14.6302 1.60564 9.99902 1.60547ZM5.11621 9.86719C5.86386 9.91468 6.45486 10.5348 6.45508 11.2939C6.45506 12.0838 5.81519 12.7245 5.02539 12.7246C4.28481 12.7246 3.67573 12.1617 3.60254 11.4404L3.59473 11.2939L3.60156 11.1533C3.66942 10.4596 4.23282 9.91186 4.93359 9.86719H5.11621ZM14.9814 7.19141C15.729 7.23889 16.3199 7.85919 16.3203 8.61816C16.3203 9.40801 15.6804 10.0487 14.8906 10.0488C14.1501 10.0487 13.5409 9.48586 13.4678 8.76465L13.46 8.61816L13.4668 8.47754C13.5348 7.78403 14.0983 7.23618 14.7988 7.19141H14.9814ZM6.4541 4.93457C7.20161 4.9822 7.79275 5.60231 7.79297 6.36133C7.79288 7.151 7.15291 7.7917 6.36328 7.79199C5.62274 7.79199 5.01369 7.22903 4.94043 6.50781L4.93262 6.36133L4.93945 6.2207C5.00731 5.52698 5.5707 4.97922 6.27148 4.93457H6.4541ZM11.3867 3.59668C12.1343 3.64419 12.7253 4.26436 12.7256 5.02344C12.7256 5.81326 12.0857 6.45393 11.2959 6.4541C10.5553 6.4541 9.94622 5.89123 9.87305 5.16992L9.86523 5.02344L9.87207 4.88281C9.93996 4.18912 10.5033 3.64133 11.2041 3.59668H11.3867Z"></path></svg><span>Made with Claude Design</span></a><button type="button" aria-label="Dismiss" onclick="this.parentElement.remove()"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 2l8 8M10 2l-8 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></div></body></html>
